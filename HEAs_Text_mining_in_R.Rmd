@@ -1,0 +1,116 @@
+---
+title: "HEAs text mining in R"
+author: "Miao Dinghao"
+date: '2017-03-06'
+output:
+   html_notebook:
+     fig_caption: yes
+     highlight: haddock
+     number_sections: yes
+     theme: journal
+     toc: yes
+     toc_float: yes
+---
+# Loading Texts
+
+```{r Loading texts}
+library("tm")
+Corpus <- VCorpus(DirSource("./Literature", encoding = "UTF-8"),
+                readerControl = list(language = "en"))
+summary(Corpus)
+```
+# Preprocessing
+```{r}
+Corpus <- tm_map(Corpus, removePunctuation)
+```
+## Stage the Data
+```{r}
+dtm <- DocumentTermMatrix(Corpus)
+library(tidytext)
+HEAs_td <- tidy(dtm)
+
+dtm
+HEAs_td
+```
+
+# Explore data
+```{r}
+freq <- colSums(dtm)
+length(freq)
+```
+
+## Focus
+## Element Frequency
+```{r}
+library(dplyr)
+alloy <- tbl_df(read.table("./Data/High-entropy alloy system - 工作表4.csv", 
+                    header = TRUE, 
+                    sep = ",",
+                    colClasses = "character",
+                    encoding = "UTF-8"))
+library(stringr)
+N <- dim(alloy)[1]
+for (i in 1:N){
+  
+  alloy[i, 1] <- str_replace_all(alloy[i, 1],
+                                 "([A-Z])",
+                                 "\\-\\1")
+  alloy[i, 1] <- str_replace_all(alloy[i, 1],
+                                 "[0-9|.|x|(|)]",
+                                 "-")
+  alloy[i, 1] <- str_replace_all(alloy[i, 1],
+                                 "-+",
+                                 " ")
+  
+
+}
+alloy <- distinct(alloy)
+N <- dim(alloy)[1]
+alloy <- mutate(alloy, line = 1:N)
+library(tidytext)
+td_alloy <- alloy %>%
+  unnest_tokens(element, Alloy, to_lower = FALSE)
+td_alloy %>%
+  count(element, sort = TRUE)
+frequency <- td_alloy %>%
+  count(element, sort = TRUE) %>%
+  mutate(other = n / sum(n)) %>%
+  ungroup()
+periodic <- read.table("periodic-table.csv",
+                       header = TRUE,
+                       sep = ",") 
+frequency$element <- factor(frequency$element, periodic$atomic_symbol)
+library(scales)
+ggplot(frequency, aes(x = element, y = other)) +
+  # scale_y_log10(labels = percent_format()) +
+  geom_point() +
+  geom_hline(yintercept = 0.025) +
+  geom_hline(yintercept = 0.100) +
+  geom_vline(xintercept = 5) + 
+  geom_vline(xintercept = 19) +
+  geom_text(aes(label = element), check_overlap = TRUE, vjust = -1.5) +
+  theme(legend.position="none") +
+  labs(y = "Frequency", x = NULL)
+```
+
+## Plot Word Frequencies
+# Relationships Between Terms
+## Term Correlations
+## Word Clouds!
+# Clustering by Term Similarity
+## Hierarchal Clustering
+## K-means clustering
+
+
+# A trial 
+```{r}
+data <- read.csv("./Data/HEAs_Structure.csv", header = TRUE, sep = ",")
+head(data)
+library(ggplot2)
+ggplot(data, aes(x = H, y = Structure, color = Alloy, group = Alloy)) +
+  geom_point() 
+  
+```
+
+
+

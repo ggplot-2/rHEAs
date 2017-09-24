@@ -1,0 +1,6751 @@
+entropy
+
+Article
+
+Design of Light-Weight High-Entropy Alloys
+
+Rui Feng 1, Michael C. Gao 2,3,*, Chanho Lee 1, Michael Mathes 1, Tingting Zuo 1,4,
+
+Shuying Chen 1, Jeffrey A. Hawk 2, Yong Zhang 4 and Peter K. Liaw 1,*
+
+1
+
+Department of Materials Science and Engineering, The University of Tennessee, Knoxville, TN 37996, USA;
+
+rfeng3@vols.utk.edu (R.F.); clee70@vols.utk.edu (C.L.); kmathes1@vols.utk.edu (M.M.);
+
+zuott1986.520@163.com (T.Z.); schen38@vols.utk.edu (S.C.)
+
+2
+
+National Energy Technology Laboratory, Albany, OR 97321, USA; jeffrey.hawk@netl.doe.gov
+
+3
+
+AECOM, P.O. Box 1959, Albany, OR 97321, USA
+
+4
+
+State Key Laboratory for Advanced Metals and Materials, University of Science and Technology Beijing,
+
+Beijing 100083, China; rzhangy@ustb.edu.cn
+
+*
+
+Correspondence: michael.gao@netl.doe.gov (M.C.G.); pliaw@utk.edu (P.K.L.);
+
+Tel.: +1-541-967-5869 (M.C.G.); +1-865-974-6356 (P.K.L.)
+
+Academic Editor: An-Chou Yeh
+
+Received: 2 July 2016; Accepted: 5 September 2016; Published: 13 September 2016
+
+Abstract: High-entropy alloys (HEAs) are a new class of solid-solution alloys that have attracted
+
+worldwide attention for their outstanding properties. Owing to the demand from transportation
+
+and defense industries, light-weight HEAs have also garnered widespread interest from scientists
+
+for use as potential structural materials. Great efforts have been made to study the phase-formation
+
+rules of HEAs to accelerate and refine the discovery process. In this paper, many proposed
+
+solid-solution phase-formation rules are assessed, based on a series of known and newly-designed
+
+light-weight HEAs. The results indicate that these empirical rules work for most compositions but
+
+also fail for several alloys. Light-weight HEAs often involve the additions of Al and/or Ti in great
+
+amounts, resulting in large negative enthalpies for forming solid-solution phases and/or intermetallic
+
+compounds. Accordingly, these empirical rules need to be modified with the new experimental data.
+
+In contrast, CALPHAD (acronym of the calculation of phase diagrams) method is demonstrated
+
+to be an effective approach to predict the phase formation in HEAs as a function of composition
+
+and temperature. Future perspectives on the design of light-weight HEAs are discussed in light of
+
+CALPHAD modeling and physical metallurgy principles.
+
+Keywords: single-phase solid solutions; intermetallics; phase-formation rules; light-weight HEAs;
+
+enthalpy of mixing; entropy of mixing; CALPHAD; excess entropy
+
+1. Introduction
+
+Recently, high-entropy alloys (HEAs) have gained much attention for their ability to expand
+
+the limited range of traditional alloys systems and because of their outstanding mechanical
+
+properties [1–6]. Due to the demand from transportation and defense industries, the development of a new generation of light-weight alloys has also brought widespread interest in HEAs to the
+
+materials science and engineering communities, expressly, for the purpose of saving energy and
+
+raw materials [7–15]. The trial-and-error approach that has been used for traditional alloys design is costly and time-consuming for the discovery of new HEAs because of the vast compositional
+
+space that they occupy. As a consequence, efforts have been made to study HEA phase-formation
+
+rules to accelerate the discovery process [4, 16–29]. Taking advantage of the phase-formation rules, the constitutive phases in HEAs can be controlled and adjusted to improve mechanical properties.
+
+In recently-developed light-weight HEAs (the densities of light-weight HEAs are defined as less than
+
+7.00 g·cm−3 in this paper, considering that most HEAs studied in the literature have densities more
+
+Entropy 2016, 18, 333; doi:10.3390/e18090333
+
+www.mdpi.com/journal/entropy
+
+
+
+
+
+Entropy 2016, 18, 333
+
+2 of 21
+
+than 7.00 g·cm−3), most of them are composed of solid solutions (SS) and intermetallics (IM), with only
+
+a few compositions forming single-phase solid solutions [7,9,11,13,15]. A majority of the light-weight HEAs contain Al and/or Ti in high concentrations in order to lower the density. However, Al (and Ti)
+
+tends to form very stable intermetallic compounds with (late) transition-metal elements (TMs) due to
+
+the apparent differences in atomic radii and electronegativity. Although Li- and Mg-containing HEAs
+
+are reported [30–32], their microstructures show a mixture of various intermetallic compounds.
+
+In order to explore advanced light-weight HEAs, it is essential to adjust the alloy composition, and,
+
+thus, the resulting constitutive phases in the microstructure in order to achieve the desired physical
+
+and mechanical properties, while keeping the density as low as possible. Therefore, it is important
+
+to investigate these empirical phase-formation rules, as applied to light-weight HEAs. Meanwhile,
+
+CALPHAD (the acronym of the calculation of phase diagrams) method is also used here to compare
+
+the effectiveness of predicting the single-phase solid solutions versus the empirical parameters.
+
+In this regard, many developed formation rules have been summarized and discussed in this
+
+paper. The corresponding parameters are also calculated, using these rules, by applying them to
+
+a series of developed HEAs and our newly-designed light-weight HEAs, aiming to provide more
+
+available experimental data for the assessment of the phase-formation rules in this study. Moreover,
+
+the CALPHAD modeling is performed for several equimolar light-weight HEAs. Combined with the
+
+experimental results, the phase-prediction effectiveness of the phase-formation rules and CALPHAD
+
+method for light-weight HEAs are studied as a way to accelerate the design of new light-weight HEAs
+
+with targeted properties.
+
+2. Materials and Methods
+
+Our newly-designed light-weight HEAs comprise of five elements: Al, Cr, Fe, Mn and Ti.
+
+To examine the compositional effect on density and phase formation, the Al molar ratio is allowed to
+
+vary from 1 to 4. To minimize the formation of detrimental intermetallic compounds, the Ti molar ratio
+
+is kept at 1 or 0.25. Strictly speaking, Al2CrFeMnTi0.25, Al3CrFeMnTi0.25, and Al4CrFeMnTi0.25 alloys
+
+do not meet the HEA definition (HEAs consist of 5 or more elements between 5 and 35 atomic percent
+
+(at.%).) proposed by Yeh et al. [2]. They were designed to explore the lower-density compositional space. In consideration of the possible high-temperature applications, these newly-developed alloys
+
+contain Al and Cr in large amounts. The addition of Al (or Cr) holds the potential to form a protective
+
+dense surface scale of Al2O3 (or Cr2O3).
+
+The AlxCrFeMnTiy alloys (where the x and y values are in molar ratios: x = 1, 1.5, 2, 3, and 4;
+
+and y = 0.25 and 1, respectively) were prepared by arc-melting the constituent elements (element
+
+purity > 99.9 weight percentage). To achieve a homogeneous distribution of elements in the alloy, the
+
+melting and solidification processes were repeated five times.
+
+The chemical composition and estimated density, ρ, of the alloys are listed in Table 1. Note that the densities of these alloys were estimated, using a rule of mixtures assumption, based on a disordered
+
+solid solution, as given by:
+
+∑ ciAi
+
+ρ =
+
+(1)
+
+∑ ciAi
+
+ρ i
+
+where ci, Ai, and ρ i are the atomic percentage, atomic weight, and density of the ith constituent element.
+
+The alloys studied here are in the as-cast state. The crystal structures were identified on the
+
+well-polished bulk samples by X-ray diffraction (XRD, Bruker, Billerica, MA, USA), using a Bruker
+
+diffractometer with Cu Kα radiation. The microstructures were characterized, by scanning-electron
+
+microscopy (SEM, Carl Zeiss, Oberkochen, Germany), using a LEO Gemini 1525 field-emission
+
+scanning-electron microscope equipped with the backscattering-electron (BSE, K. E. Developments Ltd.,
+
+Cambridge, UK) detector and the energy-dispersive X-ray spectrometry (EDX, Oxford Instruments,
+
+Abingdon, UK).
+
+
+
+
+
+Entropy 2016, 18, 333
+
+3 of 21
+
+Table 1. Nominal chemical composition in at.% and the estimated density, ρ, of the newly-designed AlxCrFeMnTiy (x = 1, 1.5, 2, 3, and 4; y = 0.25 and 1) alloys.
+
+Alloy
+
+Al
+
+Cr
+
+Fe
+
+Mn
+
+Ti
+
+ρ (g·cm−3)
+
+Al1.5CrFeMnTi
+
+27.28
+
+18.18
+
+18.18
+
+18.18
+
+18.18
+
+5.31
+
+Al2CrFeMnTi
+
+33.32
+
+16.67
+
+16.67
+
+16.67
+
+16.67
+
+5.06
+
+AlCrFeMnTi0.25
+
+23.53
+
+23.53
+
+23.53
+
+23.53
+
+5.88
+
+5.87
+
+Al2CrFeMnTi0.25
+
+38.10
+
+19.05
+
+19.05
+
+19.05
+
+4.75
+
+5.16
+
+Al3CrFeMnTi0.25
+
+48.00
+
+16.00
+
+16.00
+
+16.00
+
+4.00
+
+4.71
+
+Al4CrFeMnTi0.25
+
+55.17
+
+13.79
+
+13.79
+
+13.79
+
+3.46
+
+4.40
+
+3. Phase-Formation Rules of HEAs
+
+In order to predict the formation of solid solutions in HEAs, many phenomenological parameters
+
+based on thermodynamics and physics have been proposed [3,4,6, 16,17,19,33]. In this study, several classic models were selected, and their main features are summarized as follows:
+
+Based on thermodynamics and Hume-Rothery rules, Zhang et al. [3,4, 16] put forward three parameters to suggest a criterion for the formation of a solid solution: the atomic-radius
+
+difference ( δ r), enthalpy of mixing (∆Hmix), and entropy of mixing (∆Smix). They are defined by
+
+Equations (2)–(4), respectively:
+
+q
+
+δ r =
+
+∑n c
+
+i=1 i (1 − ri /r)2
+
+(2)
+
+n
+
+where r = ∑ ciri, ci and ri are the atomic percentage and radius of the ith element, respectively; and
+
+i=1
+
+n
+
+∆Hmix = ∑ Ωijcicj
+
+(3)
+
+i=1,i6=j
+
+where Ωij = 4∆Hmix, ∆Hmix is the enthalpy of mixing between the ith and jth elements at the
+
+ij
+
+ij
+
+equi-molar composition in the liquid using the Miedema model; and
+
+n
+
+∆Smix = −R∑ (cilnci)
+
+(4)
+
+i=1
+
+where R is the gas constant. Note that the configurational entropy of an alloy usually decreases, as
+
+the temperature decreases since lowering the temperature promotes developing atomic ordering
+
+or separation for the alloy.
+
+As a result, the true Sconf is temperature dependent, and its
+
+temperature dependence can be calculated from hybrid Monte Carlo/molecular dynamics (MC/MD)
+
+simulations [34]. Other entropy contributions to solid solutions or intermetallics phases may include the phonon vibration, magnetism, and electron excitation, which can be calculated from first-principles
+
+density functional theory (DFT) modeling [35,36].
+
+To further present the balance between the entropy of mixing and the enthalpy of mixing, another
+
+parameter, Ω, was also proposed [16,29], as expressed below:
+
+Ω
+
+T
+
+=
+
+m∆Smix
+
+(5)
+
+|∆Hmix|
+
+n
+
+where Tm = ∑ ci(Tm)i, (Tm)i stands for the melting point of the ith element.
+
+i=1
+
+Based on the existing data for HEAs, the empirical criteria for forming disordered solid solutions
+
+in as-cast HEAs were suggested to be −15 < ∆Hmix < 5kJ · mol−1 and 0% < δ r < 5%, or Ω ≥ 1.1 and δ r < 6.6%.
+
+Recently, for the design of single-phase HEAs, Ye et al. [19] proposed a single thermodynamic parameter, φ, taking into account the enthalpy of mixing and the excess entropy of mixing, which results from the dense atomic packing and atomic-size misfit. The single-parameter, φ, can be expressed as: SC − SH
+
+φ =
+
+(6)
+
+|SE|
+
+Entropy 2016, 18, 333
+
+4 of 21
+
+|∆
+
+where S
+
+Hmix|
+
+C = ∆Smix, and SH =
+
+. S
+
+T
+
+E denotes the excess entropy of mixing, which is a function of
+
+m
+
+the atomic packing and atomic size. As reported, a HEA tends to form a single-phase solid solution
+
+when φ ≥ φ c ( φ c is the critical value of φ that separates the single-phase solid solution from the multi-phase structures). Otherwise, a multi-phase structure develops when φ ≤ φ c. Moreover, the φ c is identified to be around 20 according to the investigation of Ye et al. [19].
+
+In fact, the formation of the solid-solution phase or intermetallic phase depends on the competition
+
+of the Gibbs free energies between solid solutions and intermetallics. In this regard, King et al. [20]
+
+proposed a new parameter, Φ, to describe the competition of the Gibbs free energies between these
+
+two phases:
+
+
+
+
+
+∆Hss
+
+− T
+
+
+
+Φ
+
+m∆Smix
+
+=
+
+mix
+
+
+
+(7)
+
+
+
+∆HMid
+
+
+
+
+
+f
+
+
+
+where ∆Hss − T∆S
+
+mix
+
+mix is the change in the Gibbs free energy for the formation of a fully-disordered
+
+solid solution, resulting from a mixture of its individual elements. ∆HMid is the enthalpy of formation
+
+f
+
+of a most stable “hypothetical” intermetallic compound among all the constituent binaries from
+
+the constituents of the mixture, while ignoring their entropy since the configurational entropy of
+
+intermetallic compounds is usually low or zero [20] and other entropy sources may cancel out between compounds and solid-solution phases [20].
+
+The details to calculate the ∆Hss and ∆HMid values using the Miedema’s model are described
+
+mix
+
+f
+
+in Reference [20], following the approach published in Reference [37]. It should be noted that in general, the calculated ∆Hss and ∆HMid values, using the Miedema model, have relatively large
+
+mix
+
+f
+
+errors. Therefore, King et al. claimed that when Φ is larger than 1, solid-solution phase will form at
+
+the system’s melting temperature. The Φ parameters for all the compositions listed in Table 2 were calculated according to Equation (7) via the single phase high-entropy alloys (SPHEAs) program [38].
+
+Another similar criterion based on enthalpy considerations was proposed by Troparevsky et al. [18].
+
+They used the enthalpy of formation of binary compounds that are predicted, using DFT calculations in
+
+the literature. Based on the calculated enthalpy matrix, it was claimed that a single-phase solid solution would form if the enthalpies of formation of all possible binary compounds fall within a specified range.
+
+This range requires binary compounds to be neither too stable, leading to the precipitation of that
+
+compound, nor unstable, indicating the immiscibility of the constituent elements. Using the enthalpy
+
+of the formation matrix provided in Reference [18], a parameter, Φ f (similar to Φ), is calculated, which is expressed as follows.
+
+Φ
+
+Tann∆Smix
+
+f =
+
+(8)
+
+
+
+
+
+∆HDFT
+
+
+
+f
+
+
+
+here, Tann is the annealing temperature used to achieve the corresponding equilibrium state in
+
+the experiments, and an appropriate value is suggested to be Tann = 0.55Tm in the work of
+
+Troparevsky et al. [18]. Values in the enthalpy of formation matrix in Reference [18] were used for ∆Hf to calculate Φ f . This model ignores the enthalpy of solid-solution phases and the entropy of
+
+intermetallic compounds.
+
+Utilizing these developed phase-formation rules mentioned above, the entirety of the
+
+corresponding empirical parameters was calculated, based on existing and newly-designed
+
+light-weight HEAs (density < 7.00 g·cm−3). In addition, several classic HEAs are selected to
+
+compare with the light-weight HEAs. These parameters are listed in Table 2. For a comprehensive list of single-phase HEAs in face-centered cubic (FCC) [1,3,6], body-centered cubic (BCC) [3,6, 39], or hexagonal close-packed (HCP) [3,6,7, 40–42] structures that are experimentally verified or computationally predicted, the reader is referred to a recent publication [26]. It should be noted that the listed alloys in Table 2 were in the as-cast state, except for Al20Li20Mg10Sc20Ti30 and AlFeMgTiZn, which were produced by mechanical alloying.
+
+Entropy 2016, 18, 333
+
+5 of 21
+
+Table 2. The microstructures and the formation-rule parameters, for typical and light-weight HEAs reported and newly-designed HEAs.
+
+Density *
+
+Number
+
+Alloys
+
+Structure
+
+δ
+
+(g·cm−3)
+
+r(%)
+
+∆Hmix(kJ · mol−1)
+
+∆Smix(kJ · mol−1)
+
+Tm(◦C)
+
+Ω
+
+φ
+
+Φ
+
+Φf
+
+Reference
+
+1
+
+Al1.5CrFeMnTi
+
+5.31
+
+BCC + L21 + Laves
+
+6.41
+
+−17.98
+
+13.25
+
+1336.31
+
+1.19
+
+1.63
+
+0.31
+
+0.28
+
+Current work
+
+2
+
+Al2CrFeMnTi
+
+5.06
+
+BCC + L21 + Laves
+
+6.33
+
+−19.00
+
+12.98
+
+1279.99
+
+1.06
+
+0.59
+
+0.34
+
+0.27
+
+Current work
+
+3
+
+AlCrFeMnTi0.25
+
+5.87
+
+BCC + L21
+
+5.78
+
+−12.07
+
+12.71
+
+1357.29
+
+1.72
+
+4.61
+
+0.37
+
+0.28
+
+Current work
+
+4
+
+Al2CrFeMnTi0.25
+
+5.16
+
+BCC + L21
+
+6.07
+
+−14.80
+
+12.14
+
+1224.56
+
+1.23
+
+1.93
+
+0.42
+
+0.24
+
+Current work
+
+5
+
+Al3CrFeMnTi0.25
+
+4.71
+
+BCC + L21 + Laves
+
+6.02
+
+−16.04
+
+11.53
+
+1142.71
+
+1.02
+
+0.16
+
+0.46
+
+0.25
+
+Current work
+
+6
+
+Al4CrFeMnTi0.25
+
+4.40
+
+BCC + L21 + Laves
+
+5.86
+
+−15.71
+
+10.73
+
+1077.10
+
+0.92
+
+−0.92
+
+0.48
+
+0.22
+
+Current work
+
+7
+
+AlCr0.5NbTiV
+
+5.71
+
+BCC
+
+4.55
+
+−15.41
+
+13.15
+
+1704.22
+
+1.69
+
+6.94
+
+0.31
+
+0.35
+
+[11]
+
+8
+
+AlCrNbTiV
+
+5.82
+
+BCC + Laves
+
+5.19
+
+−14.56
+
+13.38
+
+1724.49
+
+1.84
+
+6.18
+
+0.31
+
+0.36
+
+[11]
+
+9
+
+AlCr1.5NbTiV
+
+5.90
+
+BCC + Laves
+
+5.55
+
+−13.75
+
+13.25
+
+1741.09
+
+1.94
+
+5.72
+
+0.30
+
+0.36
+
+[11]
+
+10
+
+AlFeMgTiZn
+
+4.34
+
+BCC + IM
+
+6.04
+
+−6.44
+
+13.38
+
+987.23
+
+2.62
+
+4.44
+
+1.66 × 10−2
+
+0.18
+
+[30]
+
+11
+
+AlLiMgZnSn
+
+4.23
+
+FCC + IM
+
+5.33
+
+−6.08
+
+13.38
+
+428.58
+
+1.54
+
+4.72
+
+8.39 × 10−3
+
+0.10
+
+[31]
+
+12
+
+AlLi0.5MgZn0.5Sn0.2
+
+3.22
+
+FCC+ IM
+
+5.66
+
+−3.89
+
+12.31
+
+517.83
+
+2.50
+
+7.93
+
+8.73 × 10−3
+
+0.11
+
+[31]
+
+13
+
+AlLi0.5MgZn0.5Cu0.2
+
+3.73
+
+FCC + IM
+
+6.72
+
+−3.30
+
+12.31
+
+571.13
+
+3.15
+
+7.04
+
+1.25 × 10−2
+
+0.11
+
+[31]
+
+14
+
+AlLi0.5MgCu0.5Sn0.2
+
+3.69
+
+FCC + IM
+
+7.60
+
+−3.65
+
+12.31
+
+621.76
+
+3.02
+
+4.99
+
+1.29 × 10−2
+
+0.12
+
+[31]
+
+15
+
+Al80Li5Mg5Zn5Sn5
+
+3.05
+
+FCC + IM
+
+3.61
+
+−0.53
+
+6.47
+
+602.50
+
+10.68
+
+12.58
+
+4.66 × 10−3
+
+0.06
+
+[31]
+
+16
+
+Al80Li5Mg5Zn5Cu5
+
+3.08
+
+FCC + IM
+
+4.10
+
+−0.61
+
+6.47
+
+645.13
+
+9.73
+
+12.07
+
+4.92 × 10−3
+
+0.07
+
+[31]
+
+17
+
+Al20Li20Mg10Sc20Ti30
+
+2.67
+
+FCC
+
+5.30
+
+−0.40
+
+12.95
+
+1041.83
+
+42.56
+
+16.17
+
+6.27 × 10−4
+
+0.22
+
+[7]
+
+18
+
+AlNb1.5Ta0.5Ti1.5Zr0.5
+
+6.88
+
+BCC
+
+3.07
+
+−15.12
+
+12.51
+
+1862.79
+
+1.77
+
+14.71
+
+0.27
+
+0.28
+
+[15]
+
+19
+
+AlNbTiV
+
+5.59
+
+BCC
+
+3.30
+
+−16.25
+
+11.53
+
+1678.87
+
+1.38
+
+7.22
+
+0.30
+
+0.30
+
+[9]
+
+20
+
+Al0.5NbTiVZr
+
+6.04
+
+BCC + Laves + Zr2Al
+
+6.67
+
+−10.86
+
+13.15
+
+1831.16
+
+2.55
+
+6.18
+
+0.25
+
+0.29
+
+[10]
+
+21
+
+AlNbTiVZr
+
+5.79
+
+BCC + Laves + Zr2Al
+
+5.53
+
+−17.44
+
+13.38
+
+1714.09
+
+1.52
+
+3.91
+
+0.23
+
+0.28
+
+[10]
+
+22
+
+Al1.5NbTiVZr
+
+5.55
+
+BCC + Laves + Zr2Al
+
+5.32
+
+−21.55
+
+13.25
+
+1618.31
+
+1.16
+
+1.71
+
+0.25
+
+0.27
+
+[10]
+
+23
+
+CrNbTiZr
+
+6.67
+
+BCC + Laves
+
+7.84
+
+−5.00
+
+11.53
+
+1976.75
+
+5.19
+
+4.31
+
+0.66
+
+0.40
+
+[13]
+
+24
+
+CrNbTiVZr
+
+6.57
+
+BCC + Laves
+
+7.67
+
+−4.64
+
+13.38
+
+1963.40
+
+6.45
+
+5.24
+
+0.79
+
+0.46
+
+[13]
+
+25
+
+NbMoCrTiAl
+
+6.57
+
+BCC + IM
+
+4.87
+
+−13.60
+
+13.38
+
+1867.09
+
+2.11
+
+8.32
+
+0.32
+
+0.38
+
+[14]
+
+26
+
+NbTiVZr
+
+6.52
+
+BCC
+
+6.03
+
+−0.25
+
+11.53
+
+1977.50
+
+103.76
+
+7.97
+
+1.86
+
+2.64
+
+[13]
+
+27
+
+NbTiV2Zr
+
+6.34
+
+3 BCCs
+
+6.41
+
+−1.28
+
+11.08
+
+1964.00
+
+19.36
+
+6.43
+
+1.88
+
+2.52
+
+[13]
+
+28
+
+CoCrFeNi **
+
+8.19
+
+FCC
+
+1.03
+
+−3.75
+
+11.53
+
+1598.75
+
+5.75
+
+3583.31
+
+1.16
+
+1.27
+
+[43]
+
+29
+
+CoCrFeMnNi **
+
+8.04
+
+FCC
+
+0.92
+
+−4.16
+
+13.38
+
+1528.20
+
+5.79
+
+34.68
+
+1.12
+
+1.19
+
+[1]
+
+30
+
+HfNbTiZr **
+
+8.38
+
+BCC
+
+4.12
+
+2.50
+
+11.53
+
+2058.25
+
+10.75
+
+15.26
+
+1.95
+
+6.96
+
+[44]
+
+31
+
+HfNbTaTiZr **
+
+9.94
+
+BCC
+
+4.01
+
+2.72
+
+13.38
+
+2250.00
+
+12.41
+
+16.90
+
+2.55
+
+8.75
+
+[45]
+
+32
+
+MoNbTaW **
+
+13.80
+
+BCC
+
+2.27
+
+−6.50
+
+11.53
+
+2884.75
+
+5.60
+
+60.98
+
+1.71
+
+1.08
+
+[39]
+
+33
+
+MoNbTaVW **
+
+13.63
+
+BCC
+
+3.21
+
+−4.64
+
+13.38
+
+2689.80
+
+8.54
+
+41.17
+
+1.75
+
+1.17
+
+[39]
+
+* If there are no experimental densities provided, the densities will be calculated using Equation (1). ** Listed for comparison purposes.
+
+
+
+
+
+Entropy 2016, 18, 333
+
+6 of 21
+
+Entropy 2016, 18, 333
+
+8 of 24
+
+4. Results
+
+4. Results
+
+4.1.
+
+4.1. Newly-Designed
+
+Newly-Designed Light-W
+
+Light- eight
+
+Weight HEAs
+
+HEAs
+
+Figur
+
+Figu e
+
+re 1 shows
+
+1 show
+
+the XRD
+
+s the XRD patterns of
+
+patterns of o our
+
+u
+
+newly-designed
+
+r newly-designed
+
+light-weight
+
+light-weight Al x AlxCrFeMnT
+
+CrFeMnTi y
+
+iy
+
+HE HEAs.
+
+As. All
+
+All major phases
+
+major phases are are identified.
+
+identified
+
+For
+
+. For cl
+
+clarity, unknown
+
+arity, unknown ph phases are not
+
+ases are not ind indexed.
+
+e
+
+The
+
+xed. The XR XRD results
+
+D results sho show
+
+w that
+
+that all
+
+all the the alloys
+
+alloys
+
+exhibit the
+
+exhibit the pr presence
+
+esence of of
+
+a B a BCC str
+
+CC struct ucture. Besides
+
+ure. Besides the the fundamental
+
+fundamental
+
+dif
+
+diffra fraction
+
+ction pe peaks
+
+aks for
+
+for the BCC structure, two peaks
+
+the BCC structure, two peaks at a at
+
+b about
+
+out 26° 26◦
+
+an and
+
+d 30° 30◦
+
+ar
+
+are detected
+
+e detect
+
+for
+
+ed for all t all
+
+h
+
+the six compositions,
+
+e six composit
+
+and
+
+ions, and they
+
+they
+
+are are identified
+
+identified
+
+as the
+
+as the Fe2 Fe2AlTi-type
+
+AlTi-type L21 L2
+
+st 1 structur
+
+ructure.
+
+e.
+
+The The
+
+XR
+
+XRD
+
+D pa
+
+patterns
+
+tterns al
+
+also show the
+
+so show the exis
+
+existence
+
+tence of the
+
+of
+
+int the
+
+erm intermetallic
+
+etallic C
+
+C14
+
+14 Laves Laves
+
+ph
+
+phase
+
+ase in Al1.5 in
+
+Cr Al1.5CrFeMnT
+
+FeMnTi (Figur i
+
+e (Figur
+
+1e
+
+e 1e)
+
+) and Al2 and Al2CrFeMnT
+
+CrFeMnTi (Figur
+
+i
+
+e 1f (Figur
+
+) allo e 1
+
+ys. f)
+
+In
+
+alloys.
+
+additioIn
+
+n addition
+
+to BCC a to
+
+n
+
+BCC
+
+d L21 p and
+
+has L21 phases, some
+
+es, some complex complex
+
+structures str
+
+ar uctures are reflected
+
+e reflected in Al3
+
+in Al3
+
+CrFeMnTi CrFeMnT
+
+0.25 (Fig
+
+i
+
+ure 0.25
+
+1c)
+
+(Figure
+
+and A 1
+
+l4 c) and Al4
+
+CrFeMnTi CrFeMnT
+
+0.25 (Fig
+
+i0.25
+
+ure (Figure
+
+1d), wh1d), which ar
+
+ich are id e identified
+
+entified as as
+
+Al A
+
+8
+
+l8
+
+Cr5Cr
+
+-t 5-type
+
+ype
+
+(cI52,
+
+(cI52, I I-43m)
+
+-43m) and
+
+and
+
+Al58.5
+
+58.5 Cr
+
+Cr 10.3
+
+10.3
+
+Fe
+
+Fe 31.2
+
+31.2-t -type
+
+ype (h(hR26,
+
+R26, R3m)
+
+R3m)
+
+phases.
+
+phases.
+
+
+
+Figure 1. XRD patterns of a series of newly-designed light-weight HEAs: (a) Al1.0CrFeMnTi0.25; (b) Figure 1. XRD patterns of a series of newly-designed light-weight HEAs: (a) Al1.0CrFeMnTi0.25; Al2.0CrFeMnTi0.25; (c) Al3.0CrFeMnTi0.25; (d) Al4.0CrFeMnTi0.25; (e) Al1.5CrFeMnTi and (f) (b) Al2.0CrFeMnTi0.25; (c) Al3.0CrFeMnTi0.25; (d) Al4.0CrFeMnTi0.25; (e) Al1.5CrFeMnTi and Al2.0CrFeMnTi.
+
+(f) Al2.0CrFeMnTi.
+
+The microstructures of these light-weight HEAs were characterized by SEM, as shown in Figure
+
+The microstructures of these light-weight HEAs were characterized by SEM, as shown in Figure 2.
+
+2. Alloys of Al3CrFeMnTi0.25 (Figure 2c), Al1.5CrFeMnTi (Figure 2e), and Al2CrFeMnTi (Figure 2f) all Alloys of Al
+
+exhibit multi-phase struct
+
+3CrFeMnTi
+
+ures, while
+
+0.25 (Figure 2c), Al
+
+AlCrFe
+
+1.5CrFeMnTi (Figure 2e), and Al
+
+MnTi
+
+2CrFeMnTi (Figure 2f) all
+
+0.25 (Figure 2a) and Al2CrFeMnTi0.25 (Figure 2b)
+
+exhibit multi-phase structures, while AlCrFeMnTi
+
+present a main BCC structure. It is worth noting that the SEM m
+
+0.25 (Figure 2a) and Al
+
+icrograph
+
+2CrFeMnTi
+
+does not show enough
+
+0.25 (Figure 2b)
+
+present a main BCC structure. It is worth noting that the SEM micrograph does not show enough
+
+phase contrast between phases in the microstructure of Al4CrFeMnTi0.25 (Figure 2d), although
+
+phase contrast between phases in the microstructure of Al
+
+multiple phases are detected, using XRD (Figure 1d). The
+
+4CrFeMnTi
+
+black dots ap
+
+0.25 (Figure 2d), although multiple
+
+pearing on the SEM images
+
+phases are detected, using XRD (Figure 1d). The black dots appearing on the SEM images are defects are defects produced during the casting process. Since one main purpose of the experimental part
+
+produced during the casting process. Since one main purpose of the experimental part provided here is
+
+provided here is to provide more available experimental data to assess the phase-formation rules,
+
+to provide more available experimental data to assess the phase-formation rules, the evidence showing
+
+the evidence showing single-phase or multi-phase structures is sufficient in this study.
+
+single-phase or multi-phase structures is sufficient in this study.
+
+Entropy 2016, 18, 333; doi:10.3390/e18090333
+
+www.mdpi.com/journal/entropy
+
+
+
+
+
+Entropy 2016, 18, 333
+
+7 of 21
+
+Entropy2016, 18, 333
+
+9 of 24
+
+
+
+Figure 2. SEM images of a series of newly-designed light-weight HEAs: (a) Al1.0CrFeMnTi0.25; (b) Figure 2. SEM images of a series of newly-designed light-weight HEAs: (a) Al
+
+Al
+
+1.0CrFeMnTi0.25;
+
+2.0CrFeMnTi0.25; (c) Al3.0CrFeMnTi0.25; (d) Al4.0CrFeMnTi0.25; (e) Al1.5CrFeMnTi and (f) (b) Al Al
+
+2.0CrFeMnTi
+
+2.0CrFeMnTi. (GBs represent grain boundaries).
+
+0.25;
+
+(c) Al3.0CrFeMnTi0.25; (d) Al4.0CrFeMnTi0.25; (e) Al1.5CrFeMnTi and
+
+(f) Al2.0CrFeMnTi. (GBs represent grain boundaries).
+
+4.2. Criteria Based on Δ H
+
+δ
+
+mix ,
+
+r , and Ω
+
+4.2. Criteria Based on ∆H
+
+As previously reported,
+
+mix, δ r, and Ω
+
+in order to form disordered solid solutions in the as-cast HEAs, the
+
+1
+
+−
+
+ent
+
+As
+
+h
+
+pr alpy of m
+
+eviously ixing and at
+
+reported, om
+
+in ic-r
+
+or ad
+
+der ius
+
+to differ
+
+formence rule
+
+disor
+
+s
+
+der su
+
+ed ggested
+
+solid that 15
+
+− 5
+
+solutions < H
+
+Δ
+
+in the
+
+k
+
+< J
+
+⋅m
+
+as-cast ol
+
+mix
+
+
+
+HEAs, the
+
+and
+
+enthalpy
+
+of 0
+
+< δ < 5
+
+mixing %
+
+< ∆
+
+<
+
+·
+
+r
+
+[4
+
+and ]. For the Ω par
+
+atomic-radius ame
+
+dif ter, solid
+
+ference r solutions w
+
+ules
+
+ill form in the r
+
+suggested that − a
+
+15 nge of
+
+H Ω 1.
+
+≥
+
+mix
+
+1 an
+
+5 d
+
+kJ mol−1
+
+and 0 δ
+
+< <
+
+δ r6.
+
+6%
+
+< 5% [4]. For the Ω parameter, solid solutions will form in the range of Ω ≥ 1.1 and r
+
+[16]. The relationship among the three parameters is plotted in two maps, as shown in δ r <
+
+Figu
+
+6.6% re
+
+[ 3a,b.
+
+16]. In Figur
+
+The r
+
+e 3, the “SS
+
+elationship + IM” sy
+
+among mbol re
+
+the
+
+fe
+
+thr r
+
+ees to the alloys s
+
+parameters howing m
+
+is
+
+u
+
+plottedlti-phas
+
+in
+
+e st
+
+two ructure
+
+maps, (i
+
+as .e.,
+
+shown in
+
+Figure soli
+
+3 d-so
+
+a,b. lut
+
+In ion and int
+
+Figure 3, erme
+
+the tall
+
+“SS ic pha
+
++
+
+ses
+
+IM” ) listed
+
+symbolin Ta
+
+r
+
+ble 2
+
+efers
+
+.
+
+to The “
+
+the
+
+SS (L
+
+alloys ight-weigh
+
+showingt HEAs)” symbol
+
+multi-phase
+
+
+
+structure
+
+represents those light-weight HEAs forming single-phase solid solutions. The “SS (Classic HEAs)”
+
+(i.e., solid-solution and intermetallic phases) listed in Table 2. The “SS (Light-weight HEAs)” symbol symbol stands for those selected classic HEAs (Table 2) with single-phase solid solutions. Moreover,
+
+represents those light-weight HEAs forming single-phase solid solutions. The “SS (Classic HEAs)”
+
+each composition symbol in Figure 3 (and Figures 4–7) is marked with a number, which has the symbol stands for those selected classic HEAs (Table 2) with single-phase solid solutions. Moreover, one-to-one correspondence with the composition’s number listed in Table 2. The shaded area in each
+
+yellow color
+
+composition refers to t
+
+symbol he
+
+in region
+
+Figur where
+
+e 3
+
+th
+
+(and e vast maj
+
+Figures o
+
+4 rit
+
+–7y) of
+
+is the composit
+
+marked
+
+ions
+
+with
+
+a form a singl
+
+number, e solid
+
+which has the
+
+solut
+
+one-to-one ion, whe
+
+corr
+
+reas the shad
+
+espondence
+
+ed are
+
+with
+
+a
+
+the in blue color refer
+
+composition’s s to the regio
+
+number
+
+n where the
+
+listed in T
+
+vast major
+
+able 2. The ity of the
+
+shaded area in
+
+yellow composit
+
+color r ions form “
+
+efers to
+
+S
+
+the S + I
+
+r
+
+M.”
+
+egion Note al
+
+wher l
+
+e the symbol
+
+the vast s and the sh
+
+majority
+
+ad
+
+of ing color
+
+the
+
+scheme in t
+
+compositions he fo
+
+form llowing
+
+a single solid
+
+maps in Figures 4–7 have the same meaning. Figure 3a shows the relationship between the enthalpy
+
+solution, whereas the shaded area in blue color refers to the region where the vast majority of the
+
+of mixing ( Δ H
+
+δ
+
+mix ) and atomic-radius difference ( r ) for a series of previously-developed, classic
+
+compositions form “SS + IM.” Note all the symbols and the shading color scheme in the following
+
+HEAs and light-weight HEAs. The single-phase classic and light-weight HEAs are located in a range maps in Figures 4–7 have the same meaning. Figure 3a shows the relationship between the enthalpy of 1
+
+−
+
+of 16
+
+− .25 ≤ H
+
+Δ
+
+< 5 kJ m
+
+⋅ ol
+
+< δ <
+
+mix
+
+and 0%
+
+6.6%
+
+r
+
+.
+
+mixing (∆Hmix) and atomic-radius difference ( δ r) for a series of previously-developed, classic HEAs and light-weight HEAs. The single-phase classic and light-weight HEAs are located in a range of
+
+−16.25 ≤ ∆Hmix < 5kJ · mol−1 and 0% < δ r < 6.6%.
+
+
+
+
+
+Entropy 2016, 18, 333
+
+8 of 21
+
+Entropy2016, 18, 333
+
+10 of 24
+
+Figure 3. Plots of (a) Δ H
+
+δ
+
+Figure 3. Plots of (a) ∆H mix and (b) Ω versus r for a series of the developed classic HEAs and mix and (b) Ω versus δ r for a series of the developed classic HEAs and
+
+light-wei
+
+light-weight ght HE
+
+HEAs As (eac
+
+(each h composition s
+
+composition
+
+ymbol s
+
+symbol hown i
+
+shown n Fi
+
+in gures
+
+Figur 3–7
+
+es i
+
+3– s
+
+7 marked
+
+is
+
+with the s
+
+marked with ame
+
+the
+
+same
+
+composition’s number shown in Table 2).
+
+composition’s number shown in Table 2).
+
+The
+
+
+
+Ω - δr relation presented in Figure 3b shows that all the single-phase solid-solution HEAs The Ω − δ r relation presented in Figure 3b shows that all the single-phase solid-solution HEAs in this study fall into the suggested “yellow” range of Ω ≥ 1.1 and δr < 6.6%. However, many in this study fall into the suggested “yellow” range of Ω ≥ 1.1 and δ r < 6.6%. However, many
+
+multi-phase
+
+multi-phase
+
+HEAs ar
+
+HEAs are e also loc
+
+also
+
+ated in
+
+located in the ran
+
+the
+
+ge o
+
+range f .
+
+4 7
+
+% < δ
+
+< .
+
+<
+
+of 4.7%
+
+r
+
+6 6%. In fact, it can be clearly seen
+
+δ r < 6.6%. In fact, it can be clearly
+
+seen that a
+
+that a stricter crit
+
+stricter
+
+erion (
+
+criterion Ω
+
+( ≥
+
+1.1
+
+Ω ≥ and
+
+1.1
+
+δ
+
+<
+
+r
+
+and <
+
+δ 4.
+
+r 7% ) exists, compared
+
+4.7%) exists,
+
+with the rep
+
+compared with
+
+orted criter
+
+the r
+
+io
+
+eported n (
+
+criterion
+
+(Ω ≥Ω ≥
+
+1.1
+
+1.1
+
+an
+
+and δ d
+
+r
+
+δ
+
+< 6.6%) [16], which separates the single-phase solid solutions from multi-phases r < 6
+
+.6%) [16], which separates the single-phase solid solutions from multi-phases
+
+str
+
+struct
+
+ucturesure
+
+ins in HEAs
+
+HEAs. . In ad
+
+In
+
+dition, t
+
+addition, wo e
+
+two xceptional lig
+
+exceptional ht-weight HEAs hav
+
+light-weight
+
+ing
+
+HEAs
+
+δ
+
+having δr larger than 4.7%
+
+r larger than 4.7% are
+
+are Al
+
+Al Li
+
+Ti
+
+NbTiVZr [7,13]. Note that the Al
+
+Mg Sc
+
+20
+
+20Li20Mg
+
+20Mg
+
+10Sc
+
+10Sc
+
+20Ti30
+
+20 and NbTi
+
+30 and VZr [7,13]. Note that the Al20Li20Mg10Sc20Ti
+
+20Li
+
+30 a
+
+20lloy [7
+
+10 ] was produced by
+
+20Ti30 alloy [7] was
+
+pr
+
+the mecha
+
+oduced by nica
+
+the l-alloying method. Thus, the as-s
+
+mechanical-alloying method.
+
+ynthesized alloy
+
+Thus, the
+
+may be
+
+as-synthesized far away fr
+
+alloy may om
+
+be
+
+its
+
+far away
+
+fromthermodyna
+
+its
+
+mic equili
+
+thermodynamicbrium, and larg
+
+equilibrium, e int
+
+and erna
+
+lar l st
+
+ge rains wi
+
+internalll inevitably
+
+strains
+
+be
+
+will introduced
+
+inevitably int
+
+be o th
+
+intr e alloys
+
+oduced into
+
+the after mech
+
+alloys
+
+an
+
+after ical-alloying. Therefore
+
+mechanical-alloying. , this crit
+
+Ther erion
+
+efore, may not
+
+this
+
+be appl
+
+criterion icable t
+
+may
+
+o
+
+not thi
+
+bes alloy. The NbTiVZr
+
+applicable to this alloy.
+
+The alloy [1
+
+NbT
+
+5]
+
+iVZr has δ
+
+alloy r
+
+[ =
+
+156.
+
+] 03%, b
+
+has δ ut its
+
+r =
+
+Ω =
+
+6.03%, 103.76
+
+but
+
+
+
+its is the largest a
+
+Ω = 103.76 m
+
+is ong
+
+the all the HEAs
+
+largest
+
+in thi
+
+among
+
+s
+
+all study
+
+the
+
+(Tab
+
+HEAs le
+
+in this
+
+2). The r
+
+study (Tableesu
+
+2). lts shown
+
+The r
+
+in
+
+esultsFigure 3 demo
+
+shown in
+
+nstrate that:
+
+Figure 3
+
+(1) the δ
+
+demonstrate that: (1) the δ r parameter Δ H
+
+is superior to
+
+r parameter is superior to
+
+mix or
+
+∆H Ω;
+
+mix Ω
+
+and
+
+or (;2) th
+
+and e crit
+
+(2) ica
+
+the l δ
+
+critical δ r value lies in a range of 4.7%–6.6%, depending on alloy compositions.
+
+r value lies in a range of 4.7%–6.6%, depending on alloy compositions.
+
+4.3. Criteria Based on φ, Φ, and Φ f
+
+4.3. Criteria Based on φ , Φ , and Φ f
+
+To integrate the effects of thermodynamics and atomic packing on the phase formation, the single
+
+To integrate the effects of thermodynamics and atomic packing on the phase formation, the thermodynamic parameter ( φ) [19] for selected classic HEAs and light-weight HEAs was calculated.
+
+single thermodynamic parameter ( φ ) [19] for selected classic HEAs and light-weight HEAs was Then, plots of φ against ∆Hmix, δ r, and Ω are presented in Figure 4 to look into the potential criteria thr calc
+
+ough ulated. Th
+
+combing en, plots o
+
+these
+
+f φ agai
+
+parameters. nst
+
+It H
+
+Δ
+
+can be
+
+δ
+
+mix ,
+
+r , and
+
+clearly
+
+Ω
+
+seen are presented i
+
+that there is a n Figure
+
+clear
+
+4 to look
+
+boundary
+
+into the
+
+separating the
+
+r
+
+pot
+
+egion ent
+
+of ial cr
+
+solid iteria through
+
+solutions (in combing t
+
+yellow
+
+hes
+
+color) e par
+
+fr
+
+a
+
+om met
+
+the errs. It can
+
+egion of be cl
+
+solid early
+
+solu seen t
+
+tions h
+
++ at there is a clear
+
+intermetallics
+
+
+
+(in blue
+
+boundary separating the region of solid solutions (in yellow color) from the region of solid solutions
+
+color) based on the φ values. The critical, φ c, which is used to separate the two regions, is about 7, while in
+
++ int
+
+Refer ermet
+
+ence [ al
+
+19 li
+
+] cs (i
+
+this n blue co
+
+value is lor) bas
+
+about ed on
+
+20.
+
+t
+
+Thishe
+
+tr φ
+
+end values.
+
+implies The
+
+thatcritic
+
+the al, φ c , which
+
+values of φ in is used to sep
+
+light-weight arate
+
+HEAs are
+
+the two regi
+
+somewhat
+
+ons, is a
+
+smaller than bout 7
+
+those , while
+
+classicin Reference [1
+
+HEAs. This 9]
+
+tr this va
+
+end is lue is
+
+mainlyab
+
+r out 20
+
+elated . This trend i
+
+to the fact mpl
+
+that ies tha
+
+the
+
+t the
+
+light-weight
+
+values o
+
+HEAs
+
+f
+
+usually φ in
+
+have light
+
+more-weight HEAs
+
+negative ∆H are
+
+mix, somewhat
+
+which r
+
+sm
+
+esults aller t
+
+in
+
+h
+
+the an t
+
+decrhose cl
+
+ease
+
+ass
+
+of φ ic H
+
+(see EAs. This t
+
+Equation ren
+
+(6)).d is
+
+Even so,
+
+it
+
+ma
+
+can
+
+i
+
+benly related to the
+
+hypothesized
+
+fa
+
+that ct tha
+
+the
+
+t the light-weight HE
+
+thermodynamic
+
+As us
+
+parameter, uall
+
+φ, y
+
+is have
+
+still
+
+more negative
+
+somewhat ef
+
+Δ H
+
+fective to distinguish
+
+mix , which
+
+the region of solid solutions and that of solid solutions + intermetallics, which is helpful for the design results in the decrease of φ (see Equation (6)). Even so, it can be hypothesized that the
+
+of new light-weight HEAs.
+
+thermodynamic parameter, φ , is still somewhat effective to distinguish the region of solid
+
+The hypothesis for the parameters, Φ and Φ f , is that the phase stability of an HEA is decided
+
+solutions and that of solid solutions + intermetallics, which is helpful for the design of new
+
+by the competition in the Gibbs free energies between the solid solution and intermetallic phases at
+
+light-weight HEAs.
+
+constant temperature and pressure. This hypothesis makes it possible to perform computer screening
+
+for single-phase solid solutions in a system of an arbitrary number of components. To examine the
+
+effectiveness of both parameters with the same physical meaning but different models in the present
+
+study, the relations between Φ and Φ f with respect to ∆Hmix, δ r, and Ω for all alloys listed in Table 2
+
+are illustrated in Figures 5 and 6, respectively. Through the observation of these newly-produced
+
+
+
+
+
+Entropy2016, 18, 333
+
+11 of 24
+
+Entropy 2016, 18, 333
+
+9 of 21
+
+plots, it is important to study if the combination of different rules would generate meaningful results,
+
+meanwhile, finding flaws in the currently-reported rules.
+
+Entropy2016, 18, 333
+
+11 of 24
+
+
+
+
+
+Figure 4. The variation of the single-parameter, φ , with respect to (a) H
+
+Δ
+
+δ
+
+mix , (b) r , and (c) Ω .
+
+The hypothesis for the parameters, Φ and Φ f , is that the phase stability of an HEA is
+
+decided by the competition in the Gibbs free energies between the solid solution and intermetallic
+
+phases at constant temperature and pressure. This hypothesis makes it possible to perform
+
+computer screening for single-phase solid solutions in a system of an arbitrary number of
+
+components. To examine the effectiveness of both parameters with the same physical meaning but
+
+different models in the present study, the relations between Φ and Φ
+
+H
+
+Δ
+
+f with respect to
+
+mix ,
+
+δ r , and Ω for all alloys listed in Table 2 are illustrated in Figures 5 and 6, respectively. Through the observation of these newly-produced plots, it is important to study if the combination of
+
+different rules would generate meaningful results, meanwhile, finding flaws in the
+
+Figure 4. The variation of the single-parameter,
+
+Figure 4. The variation of the
+
+φ , with respect to (a) H
+
+single-parameter, φ, with respect toΔ
+
+(a) ∆H
+
+δ
+
+mix , (b) r , and (c) Ω .
+
+mix, (b) δ r, and (c) Ω.
+
+currently-reported rules.
+
+The hypothesis for the parameters, Φ and Φ f , is that the phase stability of an HEA is
+
+decided by the competition in the Gibbs free energies between the solid solution and intermetallic
+
+phases at constant temperature and pressure. This hypothesis makes it possible to perform
+
+computer screening for single-phase solid solutions in a system of an arbitrary number of
+
+components. To examine the effectiveness of both parameters with the same physical meaning but
+
+different models in the present study, the relations between Φ and Φ
+
+H
+
+Δ
+
+f with respect to
+
+mix ,
+
+δ r , and Ω for all alloys listed in Table 2 are illustrated in Figures 5 and 6, respectively. Through the observation of these newly-produced plots, it is important to study if the combination of
+
+different rules would generate meaningful results, meanwhile, finding flaws in the
+
+Entropy2016, 18, 333
+
+12 of 24
+
+currently-reported rules.
+
+
+
+
+
+Figure 5. The variation of the thermodynamic parameter, Φ, with respect to (a)
+
+H
+
+Figure 5. The variation of the thermodynamic parameter, Φ, with respect to (a) ∆ Δ
+
+H
+
+δ
+
+mix , (b) r , and
+
+mix, (b) δ r, and (c) Ω.
+
+(c) Ω .
+
+In Figures 5 and 6, it can be clearly seen that both Φ and Φ f criteria (≥1) fail to predict the formation of the light-weight single-phase solid solution (such as AlNbTiV in Table 2), though they
+
+can predict the classic single-phase HEAs successfully. Most of the light-weight single-phase HEAs
+
+are located in the “blue” region well below the dashed lines, Φ and Φ =
+
+f
+
+1 , e.g., the calculated Φ
+
+and Φ f values for single-phase AlNbTiV are 0.30 (Table 2). One exception is the single-phase
+
+NbTiVZr [15] alloy, which has Φ and Φ f values of 1.86 and 2.64 (Table 2), respectively, despite its relatively-large δ = 6.03%
+
+Φ
+
+Φ
+
+r
+
+. Conversely, although the NbTiV2Zr alloy also has large
+
+and f
+
+values, it does not form the single-phase solid-solution structure, which may result from the larger
+
+atomic-radius difference ( δ = 6.41%
+
+Φ
+
+r
+
+). In short, relying on Φ or
+
+f criterion alone cannot predict
+
+the formation of light-weight single-phase solid solutions.
+
+
+
+Figure 6. The variation of thermodynamic parameter Φ f with respect to (a) H
+
+Δ
+
+, (b) δ , and (c) Ω .
+
+mix
+
+r
+
+
+
+
+
+Entropy2016, 18, 333
+
+12 of 24
+
+Entropy 2016, 18, 333
+
+10 of 21
+
+Figure 5. The variation of the thermodynamic parameter, Φ, with respect to (a)
+
+H
+
+Δ
+
+δ
+
+mix , (b) r , and
+
+(c) Ω .
+
+In Figures 5 and 6, it can be clearly seen that both
+
+In Figures 5 and 6, it can be clearly seen that both Φ Φ and and Φ Φ f criteria (≥1) fail to predict the
+
+f criteria (≥1) fail to predict the
+
+formation of the light-weight single-phase solid solution (such as AlNbTiV in Table 2), though they formation of the light-weight single-phase solid solution (such as AlNbTiV in Table 2), though they can predict
+
+ca the classic
+
+n predic
+
+single-phase
+
+t the classic single-p HEAs
+
+ha
+
+successfully
+
+se HEAs successfu .
+
+ll Most
+
+y.
+
+of the
+
+Most of th light-weight
+
+e light-weight
+
+single-phase
+
+single-phase
+
+HEAs
+
+HEAs
+
+are
+
+located in the
+
+are lo “blue”
+
+cated in t region
+
+he “bluewell
+
+” re below
+
+gion well the
+
+belo dashed
+
+w th
+
+lines,
+
+e dashed
+
+Φ
+
+lines,and
+
+Φ Φ
+
+and Φ =
+
+Φ
+
+f =
+
+f 1, e.g.,
+
+1
+
+the calculated
+
+, e.g., the calculated Φ and Φ f
+
+values for single-phase
+
+and Φ f values f AlNbT
+
+or singl iV
+
+e-p ar
+
+ha e 0.30
+
+se Al
+
+(Table
+
+NbTiV ar 2
+
+e ).
+
+0.3 One
+
+0 (T exception
+
+able 2)
+
+is the
+
+. One excepti single-phase
+
+on is the si
+
+NbT
+
+ngle-pha iVZr
+
+se
+
+[15]
+
+alloy, which has
+
+NbTiVZr Φ
+
+[15and
+
+] al
+
+Φf values
+
+loy, which has of
+
+Φ 1.86
+
+and and
+
+Φ 2.64
+
+values (T
+
+of able
+
+1.86 2
+
+an ), r
+
+d 2.espectively
+
+64 (Table 2) ,
+
+, redespite
+
+specti
+
+its
+
+vely
+
+r
+
+, de elatively-lar
+
+spite its
+
+ge
+
+f
+
+δ r = 6.03%. Conversely, although the NbTiV
+
+relatively-large δ = 6.03%. Conversely, 2Zr alloy also has large Φ and Φ
+
+although the NbTiV2Zr alloy also
+
+f values, it does not form
+
+Φ
+
+Φ
+
+r
+
+has large
+
+and f
+
+the single-phase solid-solution structure, which may result from the larger atomic-radius difference
+
+values, it does not form the single-phase solid-solution structure, which may result from the larger
+
+( δ r = 6.41%). In short, relying on
+
+atomic-radius difference ( δ Φ
+
+= 6.or
+
+41 Φ
+
+%).f criterion alone cannot predict the formation of light-weight
+
+Φ
+
+r
+
+In short, relying on Φ or
+
+f criterion alone cannot predict
+
+single-phase solid solutions.
+
+the formation of light-weight single-phase solid solutions.
+
+
+
+Figure 6. The variation of thermodynamic parameter Φ f with respect to (a) H
+
+Δ
+
+, (b) δ , and (c) Ω .
+
+mix
+
+r
+
+Figure 6. The variation of thermodynamic parameter Φ f with respect to (a) ∆Hmix, (b) δ r, and (c) Ω.
+
+Although the region of solid solutions and region of solid solutions + intermetallics cannot be
+
+distinguished, using Φ or Φ f values (≥1) alone, the combination of Φ or Φ f with the atomic-radius
+
+difference, δ r appears to be more effective criteria than with ∆Hmix, or Ω, as demonstrated in Figures 5
+
+and 6. In other words, when Φ or Φ f is less than 1, single-phase solid solutions may still form if the atomic-radius difference is sufficiently small (In this study, δ r should be less than the 4.7%).
+
+On the other hand, even if δ r is larger than 4.7%, large Φ or Φ f parameters may still promote forming single-phase solid solution, as in the NbTiVZr alloy (Table 2). In fact, the formation of single-phase solid solutions is the result of the synergy of the thermodynamic factors, atomic-size effects, and other factors. Therefore, thermodynamic factors and atomic-size effects must be considered together when
+
+predicting the phase formation of light-weight HEAs.
+
+Furthermore, in order to find more meaningful phase-formation criteria by combing different rules,
+
+Φf versus φ, and Φf versus Φ are plotted in Figure 7. In Figure 7a, the yellow area represents the region forming single-phase solid solutions, while the blue region stands for the area forming single-phase
+
+solid solutions plus intermetallic phases, and they are separated by the φ c = 7. In Figure 7b, the selected alloys are divided to four regions by the dash lines Φ f = 1 and Φ = 1. In examining the two plots,
+
+it is obvious that the combinations of the thermodynamic parameters can only correctly predict the
+
+formation of single-phase solid solutions in classic HEAs, while failing to predict the formation of
+
+single-phase solid solutions in light-weight HEAs.
+
+
+
+
+
+Entropy2016, 18, 333
+
+13 of 24
+
+Although the region of solid solutions and region of solid solutions + intermetallics cannot be
+
+distinguished, using Φ or Φ
+
+Φ
+
+Φ
+
+f
+
+values (≥1) alone, the combination of
+
+or f with the
+
+atomic-radius difference, δ
+
+H
+
+Δ
+
+r appears to be more effective criteria than with
+
+mix , or Ω , as
+
+demonstrated in Figures 5 and 6. In other words, when Φ or Φ f is less than 1, single-phase solid solutions may still form if the atomic-radius difference is sufficiently small (In this study, δr should be less than the 4.7%). On the other hand, even if δ
+
+r is larger than 4.7%, large Φ or Φ f
+
+parameters may still promote forming single-phase solid solution, as in the NbTiVZr alloy (Table 2).
+
+In fact, the formation of single-phase solid solutions is the result of the synergy of the
+
+thermodynamic factors, atomic-size effects, and other factors. Therefore, thermodynamic factors and
+
+atomic-size effects must be considered together when predicting the phase formation of light-weight
+
+HEAs.
+
+Furthermore, in order to find more meaningful phase-formation criteria by combing different
+
+rules, Φ versus φ
+
+Φ
+
+Φ
+
+f
+
+, and
+
+versus
+
+f
+
+are plotted in Figure 7. In Figure 7a, the yellow area represents
+
+the region forming single-phase solid solutions, while the blue region stands for the area forming
+
+single-phase solid solutions plus intermetallic phases, and they are separated by the φ = 7
+
+c
+
+. In
+
+Figure 7b, the selected alloys are divided to four regions by the dash lines Φ =1
+
+Φ =
+
+f
+
+and
+
+1. In
+
+examining the two plots, it is obvious that the combinations of the thermodynamic parameters can
+
+Entropy 2016, 18, 333
+
+11 of 21
+
+only correctly predict the formation of single-phase solid solutions in classic HEAs, while failing to
+
+predict the formation of single-phase solid solutions in light-weight HEAs.
+
+
+
+
+
+Figure 7. Comparison plots of (a) Φ f versus φ and (b) Φ f versus Φ.
+
+Figure 7. Comparison plots of (a) Φ
+
+Φ
+
+f versus φ and (b)
+
+f versus Φ .
+
+4.4. CALPHAD Modeling
+
+4.4. CALPHAD Modeling
+
+As shown in Table 3, empirical rules do not always correctly predict the formation of single-phase As shown in Table 3, empirical rules do not always correctly predict the formation of
+
+solid solutions, and actually none of them works for all the compositions studied. Furthermore, they
+
+single-phase solid solutions, and actually none of them works for all the compositions studied.
+
+will not predict the crystal structure of the solid solution or compound phase either. In contrast,
+
+Furthermore, they will not predict the crystal structure of the solid solution or compound phase
+
+the CALPHAD method determines the Gibbs free energies of all phases in the system as a function
+
+either. In contrast, the CALPHAD method determines the Gibbs free energies of all phases in the
+
+of composition and temperature, and, thus, is the ideal tool for predicting the phase formation in
+
+system as a function of composition and temperature, and, thus, is the ideal tool for predicting the
+
+phase formation in m
+
+multi-component systems,ulti-component
+
+such as
+
+syst
+
+HEAs, pr ems, s
+
+ovided uch a
+
+that
+
+s
+
+the HEAs, provi
+
+database is
+
+d
+
+suf ed that the da
+
+ficiently r
+
+taba
+
+eliable.
+
+se is
+
+sufficiently reliable.
+
+Table 3. The effectiveness of the phase-formation prediction for light-weight HEAs using the empirical The empirical rules ev
+
+√
+
+aluated in this study except the Ω and φ parameters fail for
+
+phase-formation rules (
+
+and × represent successful and unsuccessful predictions, respectively).
+
+single-phase AlNbTiV and AlCr0.5NbTiV alloys. For the single BCC NbTiVZr, the Ω , φ , Φ , and
+
+Φ
+
+Alloys
+
+Structure H
+
+Δ
+
+- δ ∆Hmix vs. δr
+
+Ω vs. δr
+
+φ
+
+Φ
+
+Φf
+
+f parameters work while the
+
+mix
+
+r rule fails. On the other hand, all empirical rules work
+
+√
+
+√
+
+√
+
+√
+
+Al1.5CrFeMnTi
+
+BCC + L21 + Laves
+
+×
+
+√
+
+√
+
+√
+
+√
+
+√
+
+well for AlCrNbTiV,
+
+Al
+
+CrNbTiZr, and CrNbTiVZr, except that the
+
+2CrFeMnTi
+
+BCC + L21 + Laves
+
+Ω - δr rule fails for AlCrNbTiV,
+
+√
+
+√
+
+√
+
+√
+
+and these allo
+
+AlCrFeMnTi ys show
+
+0.25
+
+a mixture of the
+
+BCC + L21
+
+BCC solid so
+
+√ lution with L
+
+× aves phases
+
+√
+
+.
+
+√
+
+√
+
+Al2CrFeMnTi0.25
+
+BCC + L21
+
+×
+
+√
+
+√
+
+√
+
+√
+
+√
+
+Al3CrFeMnTi0.25
+
+BCC + L21 + Laves
+
+√
+
+√
+
+√
+
+√
+
+√
+
+Al4CrFeMnTi0.25
+
+BCC + L21 + Laves
+
+√
+
+√
+
+AlCr0.5NbTiV
+
+BCC
+
+×
+
+×
+
+×
+
+√
+
+√
+
+√
+
+√
+
+AlCrNbTiV
+
+BCC + Laves
+
+×
+
+√
+
+√
+
+√
+
+√
+
+AlCr1.5NbTiV
+
+BCC + Laves
+
+×
+
+√
+
+√
+
+√
+
+√
+
+AlFeMgTiZn
+
+BCC + IM
+
+×
+
+√
+
+√
+
+√
+
+√
+
+AlLiMgZnSn
+
+FCC + IM
+
+×
+
+√
+
+√
+
+√
+
+AlLi0.5MgZn0.5Sn0.2
+
+FCC + IM
+
+×
+
+×
+
+√
+
+√
+
+√
+
+√
+
+AlLi0.5MgZn0.5Cu0.2
+
+FCC + IM
+
+×
+
+√
+
+√
+
+√
+
+√
+
+√
+
+AlLi0.5MgCu0.5Sn0.2
+
+FCC + IM
+
+√
+
+√
+
+Al80Li5Mg5Zn5Sn5
+
+FCC + IM
+
+×
+
+×
+
+×
+
+√
+
+√
+
+Al80Li5Mg5Zn5Cu5
+
+FCC + IM
+
+×
+
+×
+
+×
+
+√
+
+√
+
+Al20Li20Mg10Sc20Ti30
+
+FCC
+
+×
+
+×
+
+×
+
+√
+
+√
+
+AlNb0.5Ta0.5Ti1.5Zr0.5
+
+BCC
+
+×
+
+×
+
+×
+
+√
+
+√
+
+AlNbTiV
+
+BCC
+
+×
+
+×
+
+×
+
+√
+
+√
+
+√
+
+√
+
+√
+
+Al0.5NbTiVZr
+
+BCC + Laves + Zr2Al
+
+√
+
+√
+
+√
+
+√
+
+AlNbTiVZr
+
+BCC + Laves + Zr2Al
+
+×
+
+√
+
+√
+
+√
+
+√
+
+Al1.5NbTiVZr
+
+BCC + Laves + Zr2Al
+
+×
+
+√
+
+√
+
+√
+
+√
+
+√
+
+CrNbTiZr
+
+BCC + Laves
+
+√
+
+√
+
+√
+
+√
+
+√
+
+CrNbTiVZr
+
+BCC + Laves
+
+√
+
+√
+
+NbMoCrTiAl
+
+BCC + IM
+
+×
+
+×
+
+×
+
+√
+
+√
+
+√
+
+√
+
+NbTiVZr
+
+BCC
+
+×
+
+√
+
+√
+
+NbTiV2Zr
+
+3 BCCs
+
+×
+
+×
+
+×
+
+Single-phase solid-solution HEAs are highlighted by Italic and bold types.
+
+Entropy2016, 18, 333
+
+14 of 24
+
+Table 3. The effectiveness of the phase-formation prediction for light-weight HEAs using the
+
+empirical phase-formation rules ( √ and × represent successful and unsuccessful predictions,
+
+respectively).
+
+Alloys Structure
+
+H
+
+Δ
+
+δ
+
+δ
+
+
+
+Φ
+
+mix vs.
+
+r
+
+Ω vs. r
+
+φ Φ
+
+f
+
+Al1.5CrFeMnTi
+
+BCC + L21 + Laves
+
+√
+
+×
+
+√
+
+√
+
+√
+
+Al2CrFeMnTi
+
+BCC + L21 + Laves
+
+√
+
+√
+
+√
+
+√
+
+√
+
+AlCrFeMnTi0.25
+
+BCC + L21
+
+√
+
+×
+
+√
+
+√
+
+√
+
+Al2CrFeMnTi0.25
+
+BCC + L21
+
+√
+
+×
+
+√
+
+√
+
+√
+
+Al3CrFeMnTi0.25
+
+BCC + L21 + Laves
+
+√
+
+√
+
+√
+
+√
+
+√
+
+Al4CrFeMnTi0.25
+
+BCC + L21 + Laves
+
+√
+
+√
+
+√
+
+√
+
+√
+
+AlCr0.5NbTiV BCC
+
+×
+
+√
+
+√
+
+× ×
+
+AlCrNbTiV
+
+BCC + Laves
+
+√
+
+×
+
+√
+
+√
+
+√
+
+AlCr1.5NbTiV
+
+BCC + Laves
+
+√
+
+×
+
+√
+
+√
+
+√
+
+AlFeMgTiZn
+
+BCC + IM
+
+√
+
+×
+
+√
+
+√
+
+√
+
+AlLiMgZnSn
+
+FCC + IM
+
+√
+
+×
+
+√
+
+√
+
+√
+
+AlLi0.5MgZn0.5Sn0.2
+
+FCC + IM
+
+√
+
+× ×
+
+√
+
+√
+
+AlLi0.5MgZn0.5Cu0.2
+
+FCC + IM
+
+√
+
+√
+
+×
+
+√
+
+√
+
+AlLi0.5MgCu0.5Sn0.2
+
+FCC + IM
+
+√
+
+√
+
+√
+
+√
+
+√
+
+Al80Li5Mg5Zn5Sn5
+
+FCC + IM
+
+×
+
+×
+
+×
+
+√
+
+√
+
+Al80Li5Mg5Zn5Cu5
+
+FCC + IM
+
+×
+
+×
+
+×
+
+√
+
+√
+
+Al20Li20Mg10Sc20Ti30 FCC
+
+×
+
+√
+
+√
+
+× ×
+
+AlNb0.5Ta0.5Ti1.5Zr0.5
+
+BCC
+
+×
+
+√
+
+√
+
+× ×
+
+AlNbTiV BCC
+
+×
+
+√
+
+√
+
+× ×
+
+Al0.5NbTiVZr
+
+BCC + Laves + Zr2Al
+
+√
+
+√
+
+√
+
+√
+
+√
+
+Entropy 2016, 18, 333
+
+12 of 21
+
+AlNbTiVZr
+
+BCC + Laves + Zr2Al
+
+√
+
+×
+
+√
+
+√
+
+√
+
+Al1.5NbTiVZr
+
+BCC + Laves + Zr2Al
+
+√
+
+×
+
+√
+
+√
+
+√
+
+CrNbTiZr
+
+BCC + Laves
+
+√
+
+√
+
+√
+
+√
+
+√
+
+The empirical rules evaluated in this study except the Ω and φ parameters fail for single-phase
+
+CrNbTiVZr
+
+BCC + Laves
+
+√
+
+√
+
+√
+
+√
+
+√
+
+AlNbTiV and AlCr0.5NbTiV alloys. For the single BCC NbTiVZr, the Ω, φ, Φ, and Φ f parameters
+
+NbMoCrTiAl
+
+BCC + IM
+
+×
+
+×
+
+×
+
+√
+
+√
+
+work while the
+
+NbTiVZr ∆Hmix − δ r rule fails. On the other hand, all empirical rules work well for AlCrNbTiV,
+
+BCC
+
+×
+
+√
+
+√
+
+√
+
+√
+
+CrNbTiZr, and
+
+NbTiV2
+
+CrNbTiVZr, except that the
+
+Zr 3 Ω −
+
+BCCs δ r rule
+
+√
+
+fails for AlCrNbT
+
+×
+
+iV, and
+
+√ these alloys show a
+
+× ×
+
+mixture of the BCC solid
+
+Sing
+
+solution
+
+le-phase so
+
+with
+
+lid-solut Laves
+
+ion HE phases.
+
+As are highlighted by Italic and bold types.
+
+To demonstrate the effectiveness in predicting the phase stability for light-weight HEAs, the
+
+To demonstrate the effectiveness in predicting the phase stability for light-weight HEAs, the
+
+CALPHAD calculations were carried out on selected compositions using the TCNI8 thermodynamic
+
+CALPHAD calculations were carried out on selected compositions using the TCNI8 thermodynamic
+
+database supplied by ThermoCalcTM (version 2015b, Thermo-Calc Software, Stockholm, Sweden) [46].
+
+database supplied by ThermoCalcTM (version 2015b, Thermo-Calc Software, Stockholm, Sweden) [46].
+
+This database covers the complete binaries pertaining to elements, Al, Cr, Nb, Ti, V, and Zr, which
+
+This database covers the complete binaries pertaining to elements, Al, Cr, Nb, Ti, V, and Zr, which
+
+are important for light-weight HEAs. The previous CALPHAD modeling using this database
+
+are important for light-weight HEAs. The previous CALPHAD modeling using this database
+
+demonstrated good agreement with the experimental observations for various refractory BCC
+
+demonstrated good agreement with the experimental observations for various refractory BCC HEAs
+
+HEAs [27, 47–51]. The reader is referred to several recent publications [22, 50–54] for guidance on
+
+[27,47–51]. The reader is referred to several recent publications [22,50–54] for guidance on the
+
+the CALPHAD modeling of HEAs. The predicted phase stability during solidification for these alloys
+
+CALPHAD modeling of HEAs. The predicted phase stability during solidification for these alloys is
+
+is shown in Figure 8.
+
+shown in Figure 8.
+
+(a)1.0
+
+1.0
+
+(b)
+
+1.0
+
+(c)
+
+LIQ
+
+AlNbTiV
+
+NbTiVZr
+
+LIQ
+
+LIQ
+
+AlCr0.5NbTiV
+
+0.8
+
+BCC#1
+
+0.8
+
+0.8
+
+BCC#1
+
+BCC#1
+
+BCC
+
+BCC#2
+
+BCC
+
+tion
+
+tioon 0.6
+
+tioon 0.6
+
+0.6
+
+ole frac
+
+BCC#2
+
+ole frac
+
+ole frac
+
+0.4
+
+0.4
+
+e m 0.4
+
+e m
+
+e m
+
+Phas
+
+Phas
+
+BCC#2
+
+0.2
+
+Phas
+
+AlTi
+
+0.2
+
+0.2
+
+σ
+
+3
+
+C14_Laves
+
+σ
+
+AlTi3
+
+0
+
+0
+
+0
+
+400
+
+800
+
+1200
+
+1600
+
+2000
+
+500
+
+1000
+
+1500
+
+2000
+
+400
+
+800
+
+1200
+
+1600
+
+2000
+
+Entropy2016, 18, 333
+
+15 of 24
+
+Temperature [ C]
+
+
+
+Temperature [ C]
+
+Temperature [ C]
+
+(d)
+
+1700
+
+(e)
+
+1740
+
+(f)
+
+AlNbTiV
+
+LIQ
+
+NbTiVZr
+
+LIQ
+
+AlCr
+
+1760
+
+LIQ
+
+0.5NbTiV
+
+1600
+
+1736
+
+]
+
+]
+
+1720
+
+]
+
+C
+
+C 1500
+
+1732
+
+LIQ + BCC
+
+LIQ + BCC
+
+ature [
+
+ature [
+
+LIQ + BCC
+
+er 1680
+
+er
+
+p
+
+p
+
+erature [ C
+
+1400
+
+p 1728
+
+m
+
+Tem
+
+Tem
+
+Te
+
+1640
+
+1300
+
+1724
+
+LIQ + BCC + BCC#2
+
+1600
+
+1200
+
+1720
+
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1.0
+
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1.0
+
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1.0
+
+Mole fraction of Solid
+
+
+
+Mole fraction of Solid
+
+Mole fraction of Solid
+
+1.0
+
+(g)
+
+1.0
+
+(h)
+
+1.0
+
+(i)
+
+AlCrNbTiV
+
+LIQ
+
+CrNbTiZr
+
+LIQ
+
+CrNbTiVZr
+
+LIQ
+
+0.8
+
+BCC
+
+0.8
+
+0.8
+
+BCC#1
+
+on
+
+BCC#1
+
+tioon 0.6
+
+0.6
+
+0.6
+
+BCC#2
+
+HCP
+
+BCC#1
+
+ole frac 0.4
+
+ole fractioon 0.4
+
+ole fractio 0.4
+
+C15_Laves
+
+e m
+
+AlTi
+
+C15_Laves
+
+3
+
+ase m
+
+HCP
+
+Phas 0.2
+
+Phase m 0.2
+
+Ph 0.2
+
+C14_Laves
+
+BCC
+
+σ
+
+BCC#2
+
+BCC#2
+
+0
+
+0
+
+0
+
+500
+
+1000
+
+1500
+
+2000
+
+400
+
+800
+
+1200
+
+1600
+
+2000
+
+400
+
+600
+
+800 1000 1200 1400 1600
+
+Temperature [ C]
+
+
+
+Temperature [ C]
+
+Temperature [ C]
+
+Figure 8. Predicted phase formation in (a, d) AlNbTiV, (b, e) NbTiVZr; (c, f) AlCr0.5NbTiV; (g) Figure 8.
+
+Predicted phase formation in (a, d) AlNbTiV, (b, e) NbTiVZr; (c, f) AlCr0.5NbTiV; AlCrNbTiV; (h) CrNbTiZr and (i) CrNbTiVZr using the TCNI8 database. The non-equilibrium
+
+(g) AlCrNbTiV; (h) CrNbTiZr and (i) CrNbTiVZr using the TCNI8 database. The non-equilibrium solidification for plots (d–f) are generated using the Scheil model [52].
+
+solidification for plots (d–f) are generated using the Scheil model [52].
+
+For AlNbTiV at equilibrium (Figure 8a), the database correctly predicts the formation of the
+
+BCC phase over an extremely wide temperature range. The primary BCC phase starts to form at T =
+
+1752 °C; the solidus temperature (Tsol) is 1717 °C. At the decomposition temperature (Tdec) of 679 °C,
+
+the primary BCC phase decomposes to a Ti-poor BCC phase and AlTi3_DO19 phase. The σ phase
+
+forms at T ≤ 485 °C. The ratio of the temperature range where the primary BCC phase is stable over
+
+the solidus temperature, namely, (Tsol − Tdec)/Tsol, is 0.52. Gao [26] suggested that a ratio ≥0.3 typically favors the formation of a single-phase solid solution in the as-cast state. Due to slow diffusivities at
+
+low temperatures, it is unlikely to observe the BCC decomposition in a normal laboratory condition.
+
+The non-equilibrium solidification simulation was accomplished, using the Scheil–Gulliver models
+
+[55,56], which assume equilibrium mixing in the liquid and no diffusion in solids. The simulation
+
+also predicts the formation of a single BCC solid-solution phase, as shown in Figure 8d.
+
+Similarly, CALPHAD modeling predicts the likely formation of a single BCC phase for
+
+NbTiVZr in the as-cast state (Figure 8b,e). The BCC phase forms at T ≤ 1650 °C; the solidus
+
+temperature is 1465 °C. At T = 723 °C, the BCC phase decomposes to the BCC#1 phase that is rich in
+
+Zr and Ti, and the BCC#2 phase that is rich in V and Nb. The calculated ratio of (Tsol − Tdec)/Tsol is 0.43.
+
+Although the Scheil simulation predicts the formation of an additional BCC phase towards the end
+
+of the non-equilibrium solidification, its mole fraction is less than 1%, and its presence may not be
+
+detectable if any was to form in the alloy.
+
+For AlCr0.5NbTiV (Figure 8c), the database predicts that the BCC phase forms at T ≤ 1739 °C; the
+
+solidus temperature is 1734 °C. The C14 Laves phase forms in a narrow temperature range (765–819
+
+°C). The σ phase forms at T ≤ 782 °C. As the temperature decreases, the BCC phase decomposes to
+
+the BCC#1 phase that is poor in Nb and Ti (593–765 °C), and then to the BCC#2 phase that is very
+
+rich in V but poor in Cr and Nb at T ≤ 593 °C. The AlTi3_DO19 phase forms at 593 °C. The calculated
+
+ratio of (Tsol − Tdec)/Tsol is 0.46. The Scheil simulation also predicts the formation of a single BCC phase (Figure 8f). Using the true bulk composition reported by Stepanov et al. [11], the equilibration
+
+calculation predicts that the C14 Laves phase forms at T = 739–883 °C; and the solidus is 1724 °C. In
+
+fact, Stepanov et al. observed the formation of a single BCC phase when homogenized at 1200 °C
+
+Entropy 2016, 18, 333
+
+13 of 21
+
+For AlNbTiV at equilibrium (Figure 8a), the database correctly predicts the formation of the BCC phase over an extremely wide temperature range. The primary BCC phase starts to form at
+
+T = 1752 ◦C; the solidus temperature (Tsol) is 1717 ◦C. At the decomposition temperature (Tdec) of
+
+679 ◦C, the primary BCC phase decomposes to a Ti-poor BCC phase and AlTi3_DO19 phase. The σ
+
+phase forms at T ≤ 485 ◦C. The ratio of the temperature range where the primary BCC phase is
+
+stable over the solidus temperature, namely, (Tsol − Tdec)/Tsol, is 0.52. Gao [26] suggested that a ratio ≥0.3 typically favors the formation of a single-phase solid solution in the as-cast state. Due to
+
+slow diffusivities at low temperatures, it is unlikely to observe the BCC decomposition in a normal
+
+laboratory condition. The non-equilibrium solidification simulation was accomplished, using the
+
+Scheil–Gulliver models [55,56], which assume equilibrium mixing in the liquid and no diffusion in solids. The simulation also predicts the formation of a single BCC solid-solution phase, as shown in
+
+Figure 8d.
+
+Similarly, CALPHAD modeling predicts the likely formation of a single BCC phase for NbTiVZr in
+
+the as-cast state (Figure 8b,e). The BCC phase forms at T ≤ 1650 ◦C; the solidus temperature is 1465 ◦C.
+
+At T = 723 ◦C, the BCC phase decomposes to the BCC#1 phase that is rich in Zr and Ti, and the BCC#2
+
+phase that is rich in V and Nb. The calculated ratio of (Tsol − Tdec)/Tsol is 0.43. Although the Scheil
+
+simulation predicts the formation of an additional BCC phase towards the end of the non-equilibrium
+
+solidification, its mole fraction is less than 1%, and its presence may not be detectable if any was to
+
+form in the alloy.
+
+For AlCr0.5NbTiV (Figure 8c), the database predicts that the BCC phase forms at T ≤ 1739 ◦C; the solidus temperature is 1734 ◦C. The C14 Laves phase forms in a narrow temperature range (765–819 ◦C).
+
+The σ phase forms at T ≤ 782 ◦C. As the temperature decreases, the BCC phase decomposes to the
+
+BCC#1 phase that is poor in Nb and Ti (593–765 ◦C), and then to the BCC#2 phase that is very rich
+
+in V but poor in Cr and Nb at T ≤ 593 ◦C. The AlTi3_DO19 phase forms at 593 ◦C. The calculated
+
+ratio of (Tsol − Tdec)/Tsol is 0.46. The Scheil simulation also predicts the formation of a single BCC
+
+phase (Figure 8f). Using the true bulk composition reported by Stepanov et al. [11], the equilibration calculation predicts that the C14 Laves phase forms at T = 739–883 ◦C; and the solidus is 1724 ◦C.
+
+In fact, Stepanov et al. observed the formation of a single BCC phase when homogenized at 1200 ◦C
+
+and the C14 Laves when annealed at 800 ◦C, which is in agreement with the predictions shown in
+
+Figure 8c.
+
+For AlCrNbTiV (Figure 8g), the calculated liquids temperature from the database is 1730 ◦C; the solid temperature is 1726 ◦C. The primary BCC phase decomposes to the BCC#1 phase and
+
+C14 Laves phase at T ≤ 1206 ◦C. AlTi3_DO19 forms at T ≤ 563 ◦C, and the σ phase forms at
+
+712 ◦C. The calculated ratio of (Tsol − Tdec)/Tsol is 0.26. Using the true bulk composition reported in
+
+Reference [11], the equilibration calculation predicts that the C14 laves phase starts to form at 1292 ◦C; the solid temperature is at 1722 ◦C. In fact, Stepanov et al. [11] observed the formation of the C14 Laves phase in the homogenized state (i.e., at 1200 ◦C) and for annealed states at 800 ◦C and 1000 ◦C. These
+
+results generally agree with the predictions shown in Figure 8g.
+
+For CrNbTiZr (Figure 8h), the database predicts that the primary phase is a Nb-rich BCC phase.
+
+As the temperature deceases, the Nb content in the BCC phase decreases, while the Ti content increases.
+
+At T ≤ 680 ◦C, the Ti-rich BCC#1 phase and Nb-rich BCC#2 phase form. The C15 Laves phase forms at
+
+T ≤ 1384 ◦C. For CrNbTiVZr (Figure 8i), the primary crystallization phase is a BCC phase that has less Zr and Cr than Nb, V, and Ti, but the Zr and Cr contents continuously increase as the temperature
+
+deceases. The C15 Laves phase forms at T ≤ 1297 ◦C. For both alloys, the predicted stable phases agree
+
+well with experiments [13].
+
+In summary, the present CALPHAD calculations using the TCNI8 database successfully
+
+predict the formation of a single BCC phase in AlNbTiV, NbTiVZr, and AlCr0.5NbTiV, while most
+
+empirical rules fail (Table 3). On the other hand, the CALPHAD-predicted crystal structures of intermetallics that form in AlCrNbTiV, CrNbTiZr, and CrNbTiVZr during solidification also agree
+
+very well with experiments [11,13]. However, caution should be noted that the database does not
+
+
+
+
+
+Entropy2016, 18, 333
+
+17 of 24
+
+ex Sφ
+
+Sφ
+
+= Δ
+
++ R c ln c
+
+mix
+
+mix
+
+i
+
+i
+
+(9)
+
+i
+
+Similarly, significant negative excess entropy is also observed for NbAl x, NbTiAl x, NbTiVAl x, and CrNbTiVAl x alloys (except compositions close to the “terminals” in CrNbTiVAl x and NbTiVAl x, see Figure 9d). Also, the compositions with the maximum entropy of mixing deviate substantially
+
+BCC
+
+from their equimolar compositions (see Figure 9d). Note that the Δ S mix values are negative for nearly the entire compositional ranges for both Al-Ti and Al-Nb binaries (Figure 9a,d), suggesting
+
+that another entropy source, such as the vibrational entropy of mixing, may be extremely negative
+
+and dominate the total entropy of mixing.
+
+The enthalpies of mixing (
+
+BCC
+
+Δ H mix ) (see Figure 9b,e) at the equimolar compositions are very
+
+Entr
+
+la opy 2016, 18
+
+rge negati , 333
+
+ve values, and, thus, they contribute significantly to the Gibbs free energies, as sho 14
+
+w of 21
+
+n in
+
+Figure 9c,f (Since G
+
+Δ
+
+= H
+
+Δ
+
+− T S
+
+Δ
+
+mix
+
+mix
+
+mix ). It is noteworthy that for those M-Ti binary and
+
+pseudo-binaries, the lowest
+
+BCC
+
+Δ H
+
+(−32 kJ/mol) occurs at 50 at.% Ti in the Al-Ti binary system, but
+
+cover thermodynamic descriptions
+
+mix
+
+for all constituent ternaries (except the Al-Cr-Ti system) of the
+
+Al-Cr-Nb-Ti-V
+
+the value for -Zr system.
+
+each system Therefore,
+
+becomes le the
+
+ss
+
+predicted
+
+negative qu r
+
+ic esults
+
+kly wi shown
+
+th incr in Figures
+
+easing the n 8
+
+u and 9 are subject
+
+mber of comp
+
+to
+
+onents
+
+future impr
+
+(Figure
+
+ovemen
+
+9b). In
+
+t upon the inclusion of thermodynamic
+
+contrast, for those M-Al binary and ps descriptions
+
+eudo-binarie for
+
+s (s all constituent
+
+ee Figure 9e), ternaries
+
+the
+
+as
+
+lowest
+
+BCC
+
+well
+
+Δ H as
+
+mix further
+
+for ea optimization
+
+ch syst
+
+with
+
+em occurs respect
+
+in
+
+to
+
+the vicin the
+
+i
+
+experimental
+
+ty of 50 at.% Al, data wherever available.
+
+due to the strong ordering tendency to
+
+form the CsCl-type B2 phase.
+
+15
+
+(a)
+
+0
+
+(b)
+
+0
+
+4: AlCrNbVTi
+
+(c)
+
+x
+
+4
+
+4: AlCrNbVTix
+
+3: AlNbVTi
+
+4: AlCrNbVTix
+
+x
+
+3: AlNbVTix
+
+-3
+
+3
+
+2: AlVTi
+
+3: AlNbVTix
+
+x
+
+-5
+
+2: AlVTix
+
+1: AlTi
+
+2: AlVTix
+
+x
+
+1: AlTix
+
+-6
+
+10
+
+1: AlTi
+
+ol]
+
+x
+
+4
+
+ol] -10
+
+ol]
+
+/m
+
+2
+
+-9
+
+4
+
+m
+
+[kJ/m -15
+
+-12
+
+) [J/K
+
+[kJ/
+
+C
+
+5
+
+3
+
+1
+
+3
+
+CC)
+
+-15
+
+CC)
+
+(BC
+
+(B -20
+
+(B
+
+x
+
+x -18
+
+2
+
+2
+
+ΔS mix
+
+-21
+
+0
+
+-25
+
+ΔH mi
+
+ΔG mi -24
+
+2
+
+1
+
+-30
+
+1
+
+4
+
+1
+
+-27 3
+
+-5
+
+-35
+
+-30
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+Ti contents [at.%]
+
+
+
+Ti contents [at.%]
+
+Ti contents [at.%]
+
+15
+
+(d)
+
+10
+
+(e)
+
+0
+
+(f)
+
+4: CrNbTiVAlx
+
+4
+
+4: CrNbTiVAl
+
+3: NbTiVAl
+
+4: CrNbTiVAl
+
+x
+
+x
+
+5
+
+x
+
+3: NbTiVAl
+
+2: NbTiAl
+
+3: NbTiVAl
+
+-4
+
+x
+
+x
+
+x
+
+2: NbTiAl
+
+2: NbTiAlx
+
+l]
+
+1: NbAlx
+
+x
+
+1: NbAl
+
+o 10
+
+4
+
+3
+
+l]
+
+0
+
+1: NbAl
+
+x
+
+o
+
+x
+
+-8
+
+ol]
+
+/m
+
+2
+
+m -5
+
+-12
+
+J/K
+
+1
+
+) [
+
+3
+
+[kJ/
+
+[kJ/m
+
+C
+
+5
+
+-10
+
+-16
+
+C
+
+1
+
+CC)
+
+CC)
+
+(B
+
+(B
+
+(B
+
+1
+
+x
+
+2
+
+-15
+
+-20
+
+ΔS mi
+
+2
+
+0
+
+ΔH mix -20
+
+4
+
+ΔG mix -24
+
+1
+
+3
+
+-25
+
+3
+
+-28
+
+2
+
+4
+
+-5
+
+-30
+
+-32
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+Al contents [at.%]
+
+
+
+Al contents [at.%]
+
+Al contents [at.%]
+
+15
+
+(g)
+
+6
+
+(h)
+
+0
+
+3
+
+(i)
+
+4 4
+
+5
+
+1
+
+3
+
+-2
+
+4
+
+4
+
+l]o
+
+3
+
+l]
+
+-4
+
+10
+
+ol] 3
+
+o
+
+/m
+
+2
+
+1
+
+2
+
+1
+
+[kJ/m 2
+
+kJ/m
+
+-6
+
+) [J/K
+
+) [
+
+C
+
+C
+
+C
+
+1
+
+C(B -8
+
+(B
+
+(BCC) x
+
+x
+
+5
+
+mi 0
+
+mix
+
+3
+
+S mi
+
+1
+
+H
+
+G
+
+Δ
+
+Δ
+
+2
+
+-10
+
+Δ
+
+4: CrNbVZrTi
+
+-1
+
+x
+
+4: CrNbVZrTi
+
+4: CrNbVZrTix
+
+3: CrNbVTi
+
+x
+
+2
+
+x
+
+3: CrNbVTi
+
+-12
+
+4
+
+3: CrNbVTix
+
+2: CrVTi
+
+x
+
+x
+
+-2
+
+2: CrVTi
+
+2: CrVTix
+
+1: CrTi
+
+x
+
+x
+
+1: CrTi
+
+1: CrTix
+
+0
+
+x
+
+-3
+
+-14
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+Ti contents [at.%]
+
+
+
+Ti contents [at.%]
+
+Ti contents [at.%]
+
+Figure 9. Calculated thermodynamic mixing properties of the BCC phase at 1000 ◦C: (a–c) AlTix, AlVTix, AlNbVTix and AlCrNbVTix; (d–f) NbAlx, NbTiAlx, NbTiVAlx and CrNbTiVAlx; (g–i) CrTix, CrVTix, CrNbVTix and CrNbVZrTix pseudo-binaries using the TCNI8 database. ∆SBCC, ∆HBCC, and
+
+mix
+
+mix
+
+∆GBCC are the entropy of mixing, enthalpy of mixing, and Gibbs free energy of mixing for the BCC
+
+mix
+
+solid-solution phase, respectively. The reference state is the BCC phase at 1000 ◦C. The dashed curves
+
+in (a), (d), and (g) are the ideal configurational entropies.
+
+5. Discussions
+
+5.1. Thermodynamic Mixing Properties of Al-Cr-Nb-Ti-V and Cr-Nb-Ti-V-Zr Systems
+
+In order to lower the density below 7.0 g/cm3, additions of Al and/or Ti are required for
+
+single-phase light-weight HEAs, but excess additions of these elements may cause the formation of
+
+brittle intermetallic compounds. Even for the single-phase AlNbTiV, little tensile ductility is expected,
+
+
+
+
+
+Entropy 2016, 18, 333
+
+15 of 21
+
+since its compressive fracture strain is very small at room temperature [9]. It is intuitively expected that the formation of strong covalent bonds in a solid solution, which should be reflected in the enthalpy,
+
+may cause the embrittlement seen in the alloy. As a consequence, one natural question arises: How do
+
+the thermodynamic properties evolve with their additions? Furthermore, as shown in Table 3, those developed-empirical rules basically fail for Al-containing single-phase HEAs, but why?
+
+This subsection attempts to answer these questions by first examining the underlying
+
+thermodynamic properties of the BCC phase for selected alloy systems using the CALPHAD method.
+
+To eliminate the effect from the pure elements, only the thermodynamic-mixing properties are
+
+presented by setting the reference state to the BCC phase at the temperature of interest. The mixing
+
+properties of the Al-Cr-Nb-Ti-V system at 1000 ◦C are shown in Figure 9a–f for varying compositions in binaries and pseudo-binaries with respect to Ti and Al, respectively.
+
+For AlTix, AlVTix, AlNbVTix, and AlCrNbVTix alloys (Figure 9a), the total entropies of mixing (∆SBCC) fall well below the respective ideal configurational entropies. Thus, these systems exhibit
+
+mix
+
+significant negative excess entropy (exSBCC) for the BCC phase. The excess entropy (exS φ ) of a
+
+mix
+
+mix
+
+solution phase ( φ) is defined by the difference between the total entropy of mixing (∆S φ ) and the mix
+
+ideal configurational entropy, as determined in Equation (9):
+
+ex S φ = ∆S φ + R∑ c
+
+mix
+
+mix
+
+ilnci
+
+(9)
+
+i
+
+Similarly, significant negative excess entropy is also observed for NbAlx, NbTiAlx, NbTiVAlx, and
+
+CrNbTiVAlx alloys (except compositions close to the “terminals” in CrNbTiVAlx and NbTiVAlx, see
+
+Figure 9d). Also, the compositions with the maximum entropy of mixing deviate substantially from their equimolar compositions (see Figure 9d). Note that the ∆SBCC values are negative for nearly the mix
+
+entire compositional ranges for both Al-Ti and Al-Nb binaries (Figure 9a,d), suggesting that another entropy source, such as the vibrational entropy of mixing, may be extremely negative and dominate
+
+the total entropy of mixing.
+
+The enthalpies of mixing (∆HBCC) (see Figure 9b,e) at the equimolar compositions are very mix
+
+large negative values, and, thus, they contribute significantly to the Gibbs free energies, as shown
+
+in Figure 9c,f (Since ∆Gmix = ∆Hmix − T∆Smix). It is noteworthy that for those M-Ti binary and pseudo-binaries, the lowest ∆HBCC (−32 kJ/mol) occurs at 50 at.% Ti in the Al-Ti binary system,
+
+mix
+
+but the value for each system becomes less negative quickly with increasing the number of components
+
+(Figure 9b). In contrast, for those M-Al binary and pseudo-binaries (see Figure 9e), the lowest ∆HBCC
+
+mix
+
+for each system occurs in the vicinity of 50 at.% Al, due to the strong ordering tendency to form the
+
+CsCl-type B2 phase.
+
+To differentiate the effects of Al and Ti additions, the thermodynamic-mixing properties of the
+
+Cr-Nb-Ti-V-Zr system are shown in Figure 9g–i. It is clear that the absence of Al boosts ∆SBCC
+
+mix
+
+substantially (if one compares Figure 9g to Figure 9a,d). ∆SBCC for the Cr-Ti binary behaves almost like mix
+
+the ideal entropy of mixing, while the CrNbVZrTix pseudo-binary exhibits the small negative excess
+
+entropy of mixing, since its total entropy of mixing is smaller than the ideal configurational entropy.
+
+Note that the CrVTix and CrNbVTix alloys actually exhibit the positive excess entropy, since their
+
+total entropies of mixing are greater than their ideal configurational entropies. ∆HBCC (Figure 9h) are mix
+
+positive except Ti-poor compositions for the CrVTix alloys, implying repulsive interatomic interactions
+
+among these refractory metal elements. In this case, the entropy outweighs the enthalpy in the
+
+contribution to the Gibbs free energy (Figure 9i).
+
+5.2. Common Issues of Empirical Rules
+
+The empirical rules proposed for the solid-solution HEAs are based on Hume-Rothery rules,
+
+thermodynamics, or their combination, and they are established, based on the available experimental
+
+data reported in the literature, which includes three main categories of the single-phase solid solution, solid solution + intermetallics, and metallic glasses. As the new experimental data emerge, it is not
+
+Entropy 2016, 18, 333
+
+16 of 21
+
+surprising to see that those rules may fail for certain compositions. Because most critical values
+
+that are proposed in those empirical rules are not scientifically derived. Rather, they are statistically determined based on the available experimental data. For example, the threshold value of the φ
+
+parameter was originally proposed to be 20, but it is identified to be 7 for light-weight HEAs in
+
+the present study. Similarly, the critical δ r is identified to be ≤4.7%, and ∆Hmix ≥ −16.25kJ · mol−1.
+
+A similar phenomenon was also observed for the valence electron concentration (VEC). As reported,
+
+FCC phases are found to be stable at higher VEC (>8) and instead BCC phases are stable at lower VEC
+
+(<6.87) [17]. However, in light-weight HEAs, although VECs for all the listed light-weight HEAs are smaller than 6, most light-weight HEAs do not present the stable single-phase BCC structure. In other
+
+words, these threshold values (e.g., φ, δ r, VEC, etc. ) are sensitive to alloy systems and compositions, and, therefore, can be a range rather than a fixed value.
+
+Furthermore, the HEA community has used the empirical enthalpy data for liquids, based
+
+on the Miedema model [37] to describe the interatomic interactions in the solid-solution HEAs.
+
+This out-of-convenience approach may work in certain cases, but in general, it should be avoided if
+
+possible. In fact, a prior study by Gao et al. [27] showed that: “both the sign and absolute value of
+
+∆
+
+liq
+
+HBCC are not necessarily in accord with ∆H
+
+: For example, nine alloys exhibit opposite sign while
+
+mix
+
+mix
+
+seven alloys show the significant contrast in their absolute values.” Furthermore, the accuracy of the
+
+liquid enthalpy data from the Miedema model is questionable for certain alloy systems.
+
+In order to address the enthalpy contribution for a multi-component solid solution phase,
+
+King et al. [20] first proposed to approximate it as the composition weighted sum of the enthalpy of formation of the constituent binary concentrated solid solution based on the Miedema model.
+
+However, this approach does not consider the crystal structure of the solid solution phase, and its
+
+robustness requires verification with experimental measurements, CALPHAD modeling, and/or
+
+DFT calculations.
+
+In general, the enthalpy of mixing of a solid solution is sensitive to the crystal structure, and the
+
+value may vary among FCC, BCC, and HCP structures. As proposed in a recent study [26], the enthalpy of formation (∆Hf ) of solid-solution HEAs with the FCC, BCC, and HCP structures should be used
+
+to establish the ∆Hf − δ r relation. For the enthalpy of the formation of single-phase HEAs, readers are referred to recent first-principles density functional calculations [26,35–57], since the experimental enthalpy data for HEAs are not available in the literature.
+
+Φ and Φf are designed intentionally to illustrate the thermodynamic competition between the
+
+solid-solution phase and intermetallic phases. While the solid-solution phase contains all the principal
+
+elements for both models, the intermetallics is represented by the most stable binary compound.
+
+Furthermore, both models ignore the entropy of intermetallic compounds, and Φ f also ignore the
+
+mixing of enthalpy for solid solutions, which have been pointed out by Senkov and Miracle [33].
+
+Consequently, both models have thermodynamic flaws, since the phase stability of a multi-component
+
+alloy is not determined by the simple comparison of the Gibbs free energy in a solid solution without
+
+specifying the crystal structure with that of a hypothetical or binary compound phase; rather, it is
+
+determined by the equilibrium condition that the chemical potential of each component should be
+
+equal in all phases. In fact, the simple comparison of the Gibbs free energy among phases is only valid
+
+for the unary system when to determine phase equilibria.
+
+Also, ignoring the enthalpy contribution of the solid-solution phase, as exercised by
+
+Troparevsky et al. [18], can severely underestimate the Gibbs free energy of certain solid-solution phases if the interatomic interactions among constituent elements are very strong, as evidenced in
+
+AlCrNbVTix (see Figure 9b) and CrNbTiVAlx (see Figure 9e). The present CALPHAD modeling predicts
+
+∆HBCC to be −32, −26, −24, −22, −18, and −12 kJ/mol for AlTi, AlNb, AlNbTi, AlTiV, AlNbTiV, and
+
+mix
+
+AlCrNbTiV, respectively, at 1000 ◦C. On the other hand, the enthalpies of formation for solid-solution
+
+phases and intermetallics estimated from the Miedema model may suffer from the inaccuracy issue.
+
+Furthermore, using the most stable binary compound to represent the competing intermetallic phase in
+
+a multi-component system may overestimate its thermodynamic stability. The combined consequence
+
+
+
+
+
+Entropy 2016, 18, 333
+
+17 of 21
+
+is that these models will underestimate the likely compositions that may form single-phase solid
+
+solutions. For example, forming a single BCC-phase in AlNbTiV was predicted by CALPHAD
+
+modeling (Figure 8a,d), and was experimentally verified [9], but Φ and Φ f parameters as well as the ∆Hf − δ r relation fail to predict the formation of a single solid-solution phase. Nonetheless, the calculated Φ and Φ f values generally show remarkable similarity for alloys listed in Table 2 except certain compositions that contain Al and Mg and/or Li, and those that contain Hf. The similarity
+
+between Φ and Φ f shown in Table 2 can be understood, through the ratio
+
+Φ
+
+
+
+
+
+∆Hss − T
+
+
+
+∆
+
+
+
+
+
+∆
+
+
+
+HDFT
+
+∆Hss
+
+
+
+HDFT
+
+
+
+mix
+
+m∆Smix
+
+f
+
+
+
+
+
+f
+
+
+
+≈
+
+mix
+
+−
+
+
+
+
+
+Φ =
+
+
+
+
+
+1.82
+
+(10)
+
+
+
+
+
+f
+
+
+
+Tann∆Smix
+
+
+
+∆HMid
+
+T
+
+
+
+∆HMid
+
+
+
+f
+
+
+
+ann∆Smix
+
+
+
+f
+
+
+
+where Φ and Φ f can be obtained from Equations (7) and (8). For those alloys with similar values of Φ
+
+∆
+
+
+
+
+
+Hss
+
+∆HDFT
+
+and Φ
+
+mix
+
+
+
+f
+
+
+
+f ,
+
+≈ −1 and
+
+≈ 1 can be found from the calculated corresponding parameters,
+
+T
+
+
+
+
+
+ann∆Smix
+
+∆
+
+3
+
+
+
+HMid
+
+f
+
+
+
+which lead to the ratio of Φ
+
+Φ ≈ 1. The special ratio between ∆HMid and ∆HDFT among those alloys
+
+f
+
+f
+
+f
+
+may be attributed to the intrinsic connection between the Mediema model and DFT calculations.
+
+Lastly, for the Al-containing HEAs, the actual entropy of mixing can be substantially depressed
+
+due to strong interatomic interactions between Al and TMs. For example, the calculated ∆Smix are
+
+−4, −2, +2, +3, +6, and +10 J/(mol·K) for AlTi, AlNb, AlNbTi, AlTiV, AlNbTiV, and AlCrNbTiV,
+
+respectively; they are well below the corresponding ideal configurational entropy (Figure 9a,d),
+
+especially for the binary and ternary alloys. The much lowered entropy for the Al-containing HEAs
+
+may contribute to the additional uncertainty when predicting the solid-solution formation, using those
+
+empirical rules.
+
+5.3. Perspectives of Future Design of Light-Weight HEAs
+
+As demonstrated in the present and other studies, the CALPHAD method is the ideal approach
+
+to predict the phase stability in multi-component systems, such as HEAs. The main limitation of
+
+CALPHAD is the reliability of the thermodynamic database. A robust self-consistent database for
+
+HEAs requires the optimization of all constituent binaries and ternaries over the entire composition and
+
+temperature ranges. When such a database is not available, reliance on empirical rules, phase-diagram
+
+inspections, and density functional theory (DFT) modeling may be necessary. In fact, Gao et al. [26]
+
+has demonstrated an effective approach that combines the phase-diagram inspection, CALPHAD
+
+modeling, first-principles DFT calculations, and ab initio molecular dynamics simulations, and
+
+suggested hundreds of new single-phase equimolar HEA compositions. For example, Gao suggested
+
+quaternary and higher-order equimolar compositions in the Dy-Er-Gd-Ho-Lu-Sc-Sm-Tb-Tm-Y system,
+
+Ba-Ca-Eu-Sr-Yb system, Mo-Nb-Ta-Ti-V-W system, and Mo-Nb-Re-Ta-Ti-V-W system [26].
+
+Strong attractive interactions between Al and TMs, and between Ti and late TMs (such as Mn, Fe,
+
+Co, and Ni) cause the formation of very stable intermetallic compounds, and, thus, the formation of
+
+single-phase HEAs that contain Al and/or Ti in high contents is difficult. Therefore, the total number
+
+of single-phase light-weight HEAs is very limited, and their densities are generally above 5.5 g/cm3
+
+(see Table 2). On the other hand, for practical applications, the alloy compositions do not need to be equimolar or near-equimolar ratios, and most importantly, multi-phase microstructures are usually
+
+desirable to balance various materials properties, especially the excellent combination of strength and
+
+ductility. Therefore, from the application point of view, a rational approach for the future design of
+
+light-weight HEAs with a density less than 5.0 g/cm3 can be described below:
+
+(1)
+
+Identify the main alloying elements in addition to the dominant principal element (such as Ti, Al,
+
+or Mg), based on the target-properties requirement.
+
+(2)
+
+Use the high-entropy concept to adjust the bulk composition so as to maximize the solubility of
+
+key strengthening (or ductilizing, anti-oxidation, etc.) alloying elements.
+
+
+
+
+
+Entropy 2016, 18, 333
+
+18 of 21
+
+(3)
+
+Predict phase stability using the CALPHAD method, DFT modeling, and/or empirical criteria,
+
+and design processing and heat-treatment routes to optimize the microstructure.
+
+(4)
+
+Fabricate the down-selected alloys and characterize their microstructures and mechanical
+
+(and other) properties.
+
+(5)
+
+Refine alloy design by repeating the above procedures.
+
+6. Conclusions
+
+The present study investigated the phase formation in AlxCrFeMnTiy, assessed various empirical
+
+rules pertaining to light-weight HEAs, and carried out CALPHAD modeling on Al-Cr-Nb-Ti-V and
+
+Cr-Nb-Ti-V-Zr systems. The following conclusions were reached:
+
+(1)
+
+Empirical rules are not conclusive in predicting solid-solution formation, and they are susceptible
+
+to the alloy systems and compositions that are assessed. As new experimental data emerge, these
+
+rules are subject to reevaluation. Consequently, the proposed threshold values pertaining to those
+
+empirical rules are sensitive to alloy systems and compositions, and can fluctuate within a range
+
+of values. For light-weight HEAs, the following criteria have been identified: φ c ≥ 7, δ r ≤ 4.7%, and ∆Hmix ≥ −16.25kJ · mol−1.
+
+(2)
+
+The combination of Φ or Φ f with δ r appears to be more effective criteria than with ∆Hmix or Ω
+
+to differentiate SS from SS + IM.
+
+(3)
+
+For certain HEAs with strong interatomic interactions among constituent elements, such as
+
+Al-containing HEAs, empirical rules may severely underestimate the free energies of the
+
+solid-solution phases by ignoring the enthalpy contribution of the solid-solution phase.
+
+(4)
+
+The present CALPHAD modeling using the TCNI8 database successfully predicts the single BCC
+
+phase in AlNbTiV, Al0.5NbTiV, and NbTiVZr, while most empirical rules fail to do so.
+
+(5)
+
+The calculated entropies of mixing (∆SBCC) for the BCC phase at 1000 ◦C are −4, −2, +2, +3,
+
+mix
+
++6, and +10 J/(mol·K) for AlTi, AlNb, AlNbTi, AlTiV, AlNbTiV, and AlCrNbTiV, respectively;
+
+they are well below the corresponding ideal configurational entropy, especially for the binary
+
+and ternary alloys. Therefore, these systems exhibit noticeable negative excess entropy with the
+
+BCC structure.
+
+(6)
+
+The present CALPHAD modeling predicts that the enthalpies of mixing (∆HBCC) for the BCC
+
+mix
+
+phase at 1000 ◦C are −32, −26, −24, −22, −18, and −12 kJ/mol for AlTi, AlNb, AlNbTi, AlTiV,
+
+AlNbTiV, and AlCrNbTiV, respectively.
+
+(7)
+
+Forming Al-containing equimolar light-weight HEAs with a density less than 5.5 g/cm3 is very
+
+challenging due to very attractive interatomic interactions between Al and TMs. As such, future
+
+efforts could be shifted towards Al-rich (or Ti-rich, or Mg-rich) alloys that contain large amounts
+
+of desirable solute elements, which may dissolve in solution and/or promote the formation of
+
+beneficial precipitates, taking advantage of the high-entropy concept.
+
+Acknowledgments: The authors very much appreciate the support from the U.S. Army Office Project
+
+(W911NF-13-1-0438) with the program manager, David M. Stepp. Peter K. Liaw would like to acknowledge the
+
+Department of Energy (DOE), Office of Fossil Energy, National Energy Technology Laboratory (DE-FE-0008855, DE-FE-0024054, and DE-FE-0011194), with Vito N. Cedro, Richard J. Dunst, and Jessica Mullen as program
+
+managers. Peter K. Liaw also thanks the support from the National Science Foundation (CMMI-1100080 and
+
+DMR-1611180) with the program director, Clark Cooper and Diana Farkas. The present work was also funded by the Cross-Cutting Technologies Program at the National Energy Technology Laboratory (NETL)—Strategic
+
+Center for Coal, managed by Robert Romanosky (Technology Manager) and Charles Miller (Technology
+
+Monitor). The Research was executed through NETL’s Office of Research and Development’s Innovative Process Technologies (IPT) Field Work Proposal. Research performed by the AECOM staff was conducted under the RES
+
+contract DE-FE-0004000. Yong Zhang would like to thank the support from National Natural Science Foundation of China (NSFC) (51471025). All authors have read and approved the final manuscript.
+
+Entropy 2016, 18, 333
+
+19 of 21
+
+Author Contributions: Rui Feng and Chanho Lee conducted the experiments; Michael C. Gao and Jeffrey A. Hawk performed the CALPHAD modeling; Rui Feng, Michael C. Gao, Chanho Lee, Michael Mathes, Tingting Zuo,
+
+and Shuying Chen analyzed the data and prepared the figures; Rui Feng and Michael C. Gao wrote the main
+
+manuscript; Michael C. Gao, Yong Zhang, and Peter K. Liaw jointly supervised the work. All the authors
+
+contributed to the discussion and revision of the content.
+
+Conflicts of Interest: The authors declare no conflict of interest. This project was partially funded by the Department of Energy, National Energy Technology Laboratory, an agency of the United States Government,
+
+through a support contract with AECOM. Neither the United States Government nor any agency thereof, nor any of their employees, nor AECOM, nor any of their employees, makes any warranty, expressed or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights. Reference herein to any specific commercial product, process, or service by trade name, trademark, manufacturer, or otherwise, does not necessarily constitute or imply its endorsement, recommendation, or favoring by the United States Government or any agency thereof. The views and opinions of authors expressed herein do not necessarily state or reflect those of the United States Government or any agency thereof.
+
+References
+
+1.
+
+Cantor, B.; Chang, I.; Knight, P.; Vincent, A. Microstructural development in equiatomic multicomponent
+
+alloys. Mater. Sci. Eng. A 2004, 375–377. [CrossRef]
+
+2.
+
+Yeh, J.W.; Chen, S.K.; Lin, S.J.; Gan, J.Y.; Chin, T.S.; Shun, T.T.; Tsau, C.H.; Chang, S.Y. Nanostructured high-entropy alloys with multiple principal elements: Novel alloy design concepts and outcomes.
+
+Adv. Eng. Mater. 2004, 6, 299–303. [CrossRef]
+
+3.
+
+Zhang, Y.; Zuo, T.T.; Tang, Z.; Gao, M.C.; Dahmen, K.A.; Liaw, P.K.; Lu, Z.P. Microstructures and properties of high-entropy alloys. Prog. Mater. Sci. 2014, 61. [CrossRef]
+
+4.
+
+Zhang, Y.; Zhou, Y.J.; Lin, J.P.; Chen, G.L.; Liaw, P.K. Solid-solution phase formation rules for
+
+multi-component alloys. Adv. Eng. Mater. 2008, 10, 534–538. [CrossRef]
+
+5.
+
+Santodonato, L.J.; Zhang, Y.; Feygenson, M.; Parish, C.M.; Gao, M.C.; Weber, R.J.; Neuefeind, J.C.;
+
+Tang, Z.; Liaw, P.K. Deviation from high-entropy configurations in the atomic distributions of a
+
+multi-principal-element alloy. Nat. Commun. 2015, 6, 5964. [CrossRef] [PubMed]
+
+6.
+
+Gao, M.C.; Yeh, J.W.; Liaw, P.K.; Zhang, Y. High-Entropy Alloys: Fundamentals and Applications; Springer: Cham, Switzerland, 2016.
+
+7.
+
+Youssef, K.M.; Zaddach, A.J.; Niu, C.; Irving, D.L.; Koch, C.C. A novel low-density, high-hardness,
+
+high-entropy alloy with close-packed single-phase nanocrystalline structures. Mater. Res. Lett. 2015, 3, 95–99. [CrossRef]
+
+8.
+
+Liu, S.; Gao, M.C.; Liaw, P.K.; Zhang, Y. Microstructures and mechanical properties of AlxCrFeNiTi0.25 alloys.
+
+J. Alloy. Compd. 2015, 619, 610–615. [CrossRef]
+
+9.
+
+Stepanov, N.; Shaysultanov, D.; Salishchev, G.; Tikhonovsky, M. Structure and mechanical properties of a
+
+light-weight AlNbTiV high entropy alloy. Mater. Lett. 2015, 142, 153–155. [CrossRef]
+
+10.
+
+Stepanov, N.; Yurchenko, N.Y.; Shaysultanov, D.; Salishchev, G.; Tikhonovsky, M. Effect of Al on structure and mechanical properties of AlxNbTiVZr (x = 0, 0.5, 1, 1.5) high entropy alloys. Mater. Sci. Technol. 2015, 31, 1184–1193. [CrossRef]
+
+11.
+
+Stepanov, N.; Yurchenko, N.Y.; Skibin, D.; Tikhonovsky, M.; Salishchev, G. Structure and mechanical
+
+properties of the AlCrxNbTiV (x = 0, 0.5, 1, 1.5) high entropy alloys. J. Alloy. Compd. 2015, 652, 266–280.
+
+[CrossRef]
+
+12.
+
+Senkov, O.N.; Senkova, S.V.; Miracle, D.B.; Woodward, C.F. Mechanical properties of low-density, refractory multi-principal element alloys of the Cr–Nb–Ti–V–Zr system. Mater. Sci. Eng. A 2013, 565, 51–62. [CrossRef]
+
+13.
+
+Senkov, O.N.; Senkova, S.V.; Woodward, C.F.; Miracle, D.B. Low-density, refractory multi-principal element alloys of the Cr–Nb–Ti–V–Zr system: Microstructure and phase analysis. Acta Mater. 2013, 61, 1545–1557.
+
+[CrossRef]
+
+14.
+
+Chen, H.; Kauffmann, A.; Gorr, B.; Schliephake, D.; Seemüller, C.; Wagner, J.; Christ, H.J.; Heilmaier, M.
+
+Microstructure and mechanical properties at elevated temperatures of a new Al-containing refractory
+
+high-entropy alloy Nb-Mo-Cr-Ti-Al. J. Alloy. Compd. 2016, 661, 206–215. [CrossRef]
+
+15.
+
+Senkov, O.N.; Woodward, C.F.; Miracle, D.B. Microstructure and properties of aluminum-containing
+
+refractory high-entropy alloys. JOM 2014, 66, 2030–2042. [CrossRef]
+
+Entropy 2016, 18, 333
+
+20 of 21
+
+16.
+
+Yang, X.; Zhang, Y. Prediction of high-entropy stabilized solid-solution in multi-component alloys.
+
+Mater. Chem. Phys. 2012, 132, 233–238. [CrossRef]
+
+17.
+
+Guo, S.; Ng, C.; Lu, J.; Liu, C.T. Effect of valence electron concentration on stability of fcc or bcc phase in high entropy alloys. J. Appl. Phys. 2011, 109, 103505. [CrossRef]
+
+18.
+
+Troparevsky, M.C.; Morris, J.R.; Kent, P.R.; Lupini, A.R.; Stocks, G.M. Criteria for predicting the formation of single-phase high-entropy alloys. Phys. Rev. X 2015, 5, 011041. [CrossRef]
+
+19.
+
+Ye, Y.F.; Wang, Q.; Lu, J.; Liu, C.T.; Yang, Y. Design of high entropy alloys: A single-parameter thermodynamic rule. Scr. Mater. 2015, 104, 53–55. [CrossRef]
+
+20.
+
+King, D.J.M.; Middleburgh, S.C.; McGregor, A.G.; Cortie, M.B. Predicting the formation and stability of
+
+single phase high-entropy alloys. Acta Mater. 2016, 104, 172–179. [CrossRef]
+
+21.
+
+Poletti, M.G.; Battezzati, L. Electronic and thermodynamic criteria for the occurrence of high entropy alloys in metallic systems. Acta Mater. 2014, 75, 297–306. [CrossRef]
+
+22.
+
+Gao, M.C.; Alman, D.E. Searching for next single-phase high-entropy alloy compositions. Entropy 2013, 15, 4504–4519. [CrossRef]
+
+23.
+
+Ye, Y.F.; Wang, Q.; Lu, J.; Liu, C.T.; Yang, Y. The generalized thermodynamic rule for phase selection in multicomponent alloys. Intermetallics 2015, 59, 75–80. [CrossRef]
+
+24.
+
+Wang, Z.J.; Qiu, W.F.; Yang, Y.; Liu, C.T. Atomic-size and lattice-distortion effects in newly developed
+
+high-entropy alloys with multiple principal elements. Intermetallics 2015, 64, 63–69. [CrossRef]
+
+25.
+
+Wang, Z.J.; Huang, Y.H.; Yang, Y.; Wang, J.; Liu, C.T. Atomic-size effect and solid solubility of multicomponent alloys. Scr. Mater. 2015, 94, 28–31. [CrossRef]
+
+26.
+
+Gao, M.C. Design of high-entropy alloys. In High-Entropy Alloys: Fundamentals and Applications; Gao, M.C., Yeh, J.W., Liaw, P.K., Zhang, Y., Eds.; Springer: Cham, Switzerland, 2016; pp. 369–398.
+
+27.
+
+Gao, M.C.; Carney, C.S.; Do ˘gan, Ö.N.; Jablonksi, P.D.; Hawk, J.A.; Alman, D.E. Design of refractory
+
+high-entropy alloys. JOM 2015, 67, 2653–2669. [CrossRef]
+
+28.
+
+Gao, M.C.; Zhang, B.; Guo, S.M.; Qiao, J.W.; Hawk, J.A. High-entropy alloys in hexagonal close packed
+
+structure. Metall. Mater. Trans. A 2016, 47, 3322–3332. [CrossRef]
+
+29.
+
+Zhang, Y.; Lu, Z.P.; Ma, S.G.; Liaw, P.K.; Tang, Z.; Cheng, Y.Q.; Gao, M.C. Guidelines in predicting phase formation of high-entropy alloys. MRS Commun. 2014, 4, 57–62. [CrossRef]
+
+30.
+
+Hammond, V.H.; Atwater, M.A.; Darling, K.A.; Nguyen, H.Q.; Kecskes, L.J. Equal-channel angular extrusion
+
+of a low-density high-entropy alloy produced by high-energy cryogenic mechanical alloying. JOM 2014, 66, 2021–2029. [CrossRef]
+
+31.
+
+Yang, X.; Chen, S.Y.; Cotton, J.D.; Zhang, Y. Phase stability of low-density, multiprincipal component alloys containing aluminum, magnesium, and lithium. JOM 2014, 66, 2009–2020. [CrossRef]
+
+32.
+
+Li, R.; Gao, J.C.; Fan, K. Microstructure and mechanical properties of MgMnAlZnCu high entropy alloy
+
+cooling in three conditions. Mater. Sci. Forum 2011, 686, 235–241. [CrossRef]
+
+33.
+
+Senkov, O.N.; Miracle, D.B. A new thermodynamic parameter to predict formation of solid solution or
+
+intermetallic phases in high entropy alloys. J. Alloy. Compd. 2016, 658, 603–607. [CrossRef]
+
+34.
+
+Widom, M.; Huhn, W.P.; Maiti, S.; Steurer, W. Hybrid Monte Carlo/molecular dynamics simulation of a
+
+refractory metal high entropy alloy. Metall. Mater. Trans. A 2014, 45, 196–200. [CrossRef]
+
+35.
+
+Widom, M. Prediction of structure and phase transformations. In High-Entropy Alloys: Fundamentals and
+
+Applications; Gao, M.C., Yeh, J.W., Liaw, P.K., Zhang, Y., Eds.; Springer: Cham, Switzerland, 2016; pp. 267–298.
+
+36.
+
+Gao, M.C.; Niu, C.; Jiang, C.; Irving, D.L. Applications of special quasi-random structures to high-entropy alloys. In High-Entropy Alloys: Fundamentals and Applications; Gao, M.C., Yeh, J.W., Liaw, P.K., Zhang, Y., Eds.; Springer: Cham, Switzerland, 2016; pp. 333–368.
+
+37.
+
+De Boer, F.R. Cohesiodn in Metals: Transition Metal Alloys; North-Holland: Amsterdam, NY, USA, 1988; p. 785.
+
+38.
+
+King, D.J.M.; McGregor, A.G. Alloy Search and Predict. Available online: www.alloyASAP.com (accessed on 6 September 2016).
+
+39.
+
+Senkov, O.N.; Wilks, G.B.; Miracle, D.B.; Chuang, C.; Liaw, P.K. Refractory high-entropy alloys. Intermetallics 2010, 18, 1758–1765. [CrossRef]
+
+40.
+
+Takeuchi, A.; Amiya, K.; Wada, T.; Yubuta, K.; Zhang, W. High-entropy alloys with a hexagonal close-packed structure designed by equi-atomic alloy strategy and binary phase diagrams. JOM 2014, 66, 1984–1992.
+
+[CrossRef]
+
+
+
+Entropy 2016, 18, 333
+
+21 of 21
+
+41.
+
+Zhao, Y.J.; Qiao, J.W.; Ma, S.G.; Gao, M.C.; Yang, H.J.; Chen, M.W.; Zhang, Y. A hexagonal close-packed
+
+high-rntropy alloy: The effect of entropy. Mater. Des. 2016, 96, 10–15.
+
+42.
+
+Feuerbacher, M.; Heidelmann, M.; Thomas, C. Hexagonal high-entropy alloys. Mater. Res. Lett. 2015, 3, 1–6.
+
+[CrossRef]
+
+43.
+
+Kao, Y.F.; Chen, T.J.; Chen, S.K.; Yeh, J.W. Microstructure and mechanical property of as-cast, -homogenized, and -deformed AlxCoCrFeNi (0 ≤ x ≤ 2) high-entropy alloys. J. Alloy. Compd. 2009, 488, 57–64. [CrossRef]
+
+44.
+
+Wu, Y.D.; Cai, Y.H.; Wang, T.; Si, J.J.; Zhu, J.; Wang, Y.D.; Hui, X.D. A refractory Hf25Nb25Ti25Zr25
+
+high-entropy alloy with excellent structural stability and tensile properties. Mater. Lett. 2014, 130, 277–280.
+
+[CrossRef]
+
+45.
+
+Senkov, O.; Scott, J.; Senkova, S.; Meisenkothen, F.; Miracle, D.; Woodward, C. Microstructure and elevated temperature properties of a refractory TaNbHfZrTi alloy. J. Mater. Sci. 2012, 47, 4062–4074. [CrossRef]
+
+46.
+
+Sundman, B.; Jansson, B.; Andersson, J.O. The thermo-calc databank system. Calphad 1985, 9, 153–190.
+
+[CrossRef]
+
+47.
+
+Zhang, B.; Gao, M.C.; Zhang, Y.; Yang, S.; Guo, S.M. Senary refractory high-entropy alloy MoNbTaTiVW.
+
+Mater. Sci. Technol. 2015, 31, 1207–1213. [CrossRef]
+
+48.
+
+Zhang, B.; Gao, M.C.; Zhang, Y.; Guo, S.M. Senary refractory high-entropy alloy CrxMoNbTaVW. Calphad
+
+2015, 51, 193–201. [CrossRef]
+
+49.
+
+Gao, M.C.; Zhang, B.; Yang, S.; Guo, S.M. Senary refractory high-entropy alloy HfNbTaTiVZr. Metall. Mater.
+
+Trans. A 2016, 47, 3333–3345. [CrossRef]
+
+50.
+
+Zhang, C.; Gao, M.C. CALPHAD modeling of high-entropy alloys. In High-Entropy Alloys: Fundamentals and
+
+Applications; Gao, M.C., Yeh, J.W., Liaw, P.K., Zhang, Y., Eds.; Springer: Cham, Switzerland, 2016; pp. 399–444.
+
+51.
+
+Yao, H.W.; Qiao, J.W.; Gao, M.C.; Hawk, J.A.; Ma, S.G.; Zhou, H.F.; Zhang, Y. NbTaV-(Ti, W) refractory high entropy alloys. Mater. Sci. Eng. A 2016, submitted for publication. [CrossRef]
+
+52.
+
+Zhang, C.; Zhang, F.; Chen, S.L.; Cao, W.S. Computational thermodynamics aided high-entropy alloy design.
+
+JOM 2012, 64, 839–845. [CrossRef]
+
+53.
+
+Zhang, F.; Zhang, C.; Chen, S.L.; Zhu, J.; Cao, W.S.; Kattner, U. An understanding of high entropy alloys from phase diagram calculations. Calphad 2014, 45. [CrossRef]
+
+54.
+
+Zhang, C.; Zhang, F.; Diao, H.; Gao, M.C.; Tang, Z.; Liaw, P.K. Understanding phase stability of
+
+Al-Co-Cr-Fe-Ni high entropy alloys. Mater. Des. 2016, 109, 425–433. [CrossRef]
+
+55.
+
+Gulliver, G.H. The quantitative effect of rapid cooling upon the constitution of binary alloys. J. Inst. Met.
+
+1913, 9, 120–157.
+
+56.
+
+Scheil, E. Comments on the layer crystal formation. Z. Metallkd. 1942, 34, 70–72.
+
+57.
+
+Tian, F.; Wang, Y.; Irving, D.L.; Vitos, L. Applications of coherent potential approximation to HEAs.
+
+In High-Entropy Alloys: Fundamentals and Applications; Gao, M.C., Yeh, J.W., Liaw, P.K., Zhang, Y., Eds.; Springer: Cham, Switzerland, 2016; pp. 299–332.
+
+© 2016 by the authors; licensee MDPI, Basel, Switzerland. This article is an open access
+
+article distributed under the terms and conditions of the Creative Commons Attribution
+
+(CC-BY) license (http://creativecommons.org/licenses/by/4.0/).
+
+
+
+
+
+Document Outline
+
+
+Introduction
+
+Materials and Methods
+
+Phase-Formation Rules of HEAs
+
+Results Newly-Designed Light-Weight HEAs
+
+Criteria Based on Hmix , r , and
+
+Criteria Based on , , and f
+
+CALPHAD Modeling
+
+
+
+
+
+Discussions Thermodynamic Mixing Properties of Al-Cr-Nb-Ti-V and Cr-Nb-Ti-V-Zr Systems
+
+Common Issues of Empirical Rules
+
+Perspectives of Future Design of Light-Weight HEAs
+
+
+
+
+
+Conclusions
+
+
+
+
+
