@@ -71,7 +71,7 @@ Hardness_prediction <- function(BigMatrix) {
   dev.off()
   
   ### 计算模型变量重要性 ###
-  importance(rf,type=1)
+  im <- importance(rf,type=1)
   # cairo_pdf("./Figures/Hardness_prediction/varImpPlot.pdf")
   jpeg("./Figures/Hardness_prediction/varImpPlot_Hardness.jpg")
   varImpPlot(rf,
@@ -125,45 +125,121 @@ Hardness_prediction <- function(BigMatrix) {
   # 
   library(ggplot2)
   library(latex2exp)
-   col2 <- guide_legend(ncol = 2)
    ggplot(data = data.frame(Alloy_System = test_data$Alloy_Sys,
                            actual = test_hard_unscale,
                            pred_rf = pred_rf_unscale,
                            pred_BP = pred_BP_unscale), na.rm = TRUE) +
     geom_point( aes(x = actual,
                     y = pred_rf,
-                    color =  "black", 
-                    shape = Alloy_System)) +
-    scale_shape_manual(values=1:nlevels(test_data$Alloy_Sys),
-                       guide = col2) +
-    coord_equal() +
-    geom_abline(color = "black") +
-    labs(x = TeX("Actual vickers hardness/kg$\\cdot$mm^{-2}"),
-         y = TeX("Predicted vickers hardness/kg$\\cdot$mm^{-2}"),
-         shape = "Alloy system",
-         color = "Machine learning model") +
-    geom_point(aes(x = actual,
-                   y = pred_BP, 
-                  color = "red",
-                  shape = Alloy_System)) +
-   
-    scale_color_manual(values = c("black", "red"),
-                       
-                       labels = c(expression(paste("RF, ","R"^2," = 0.58, ","RMSE = 119.55.")),
-                                  expression(paste("BPNN, ", "R"^2," = 0.65, ","RMSE = 108.85.")))) +
-    theme(legend.text.align = 0)
-    
-  ggsave("./Figures/Hardness_prediction/Real_Predict.pdf",
+                    shape = Alloy_System,
+                    color = "blue"),
+                alpha = 0.7,
+                size = 7) +
+     geom_point(aes(x = actual,
+                    y = pred_BP,
+                    shape = Alloy_System,
+                    color = "red"),
+                size = 7,
+                alpha = 0.9) +
+     xlim(200, 800) +
+     ylim(200, 800) +
+    geom_abline(color = "cyan",
+                size = 0.8) +
+     guides(shape = guide_legend(ncol = 2)) +
+     theme_bw() +
+     theme(panel.grid = element_blank(),
+           axis.line = element_line(size = 0.8),
+           panel.border = element_rect(size = 1),
+           axis.text = element_text(size = 12),
+           axis.title = element_text(size = 16),
+           legend.title = element_text(size = 16),
+           legend.text = element_text(size = 12),
+           legend.text.align = 0,
+           legend.background =  element_rect(fill = "transparent",colour = NA),
+           legend.position = c(.78,.22)) +
+     labs(x = TeX("Actual vickers hardness/kg$\\cdot$mm^{-2}"),
+          y = TeX("Predicted vickers hardness/kg$\\cdot$mm^{-2}"),
+          shape = "Alloy system",
+          color = "Machine learning model") + 
+     scale_color_manual(values = c("blue", "red"),
+                        labels = c(expression(paste("RF, ","R"^2," = 0.58, ","RMSE = 119.55.")),
+                                 expression(paste("BPNN, ", "R"^2," = 0.65, ","RMSE = 108.85.")))) +
+     scale_shape_manual(values = c(6:18, 0:1, 3)) +
+     geom_text(aes(x = 330, y = 800,
+                   label = "Machine learning model"),
+               color = "black",
+               size = 8) +
+     geom_text(aes(x = 330, y = 770,
+                   label = paste("BPNN: R^2 ==", round(R2_BP, 2), 
+                                 "~~", "RMSE == ",round(rmse_BP_unscale, 2), 
+                                 sep = " ",
+                                 collapse = ",")),
+               color = "red",
+               parse = TRUE,
+               size = 4) +
+     guides(color = FALSE) +
+     geom_text(aes(x = 330, y = 740,
+                   label = paste("RF: R^2 == ", round(R2, 2),
+                                 "~~", "RMSE == ",round(rmse_unscale, 2),
+                                 "\t\n",
+                                 sep = "",
+                                 collapse = ",")),
+               color = "blue",
+               parse = TRUE,
+               size = 4) 
+     # geom_text_repel(aes(x = actual,
+     #                      y = pred_rf,
+     #                      label = Alloy_System),
+     #                  box.padding = 0.5,
+     #                  color = "blue") +
+     # geom_label_repel(aes(x = actual,
+     #                     y = pred_BP,
+     #                     label = Alloy_System),
+     #                 box.padding = 0.5)
+     #                 # color = "red"
+     #                 # )
+      
+ggsave("./Figures/Hardness_prediction/Real_Predict.pdf",
+         device = cairo_pdf,
+         width = 11.69,
+         height = 9)
+  
+  ggsave("./Figures/Hardness_prediction/Real_Predict.tiff",
+         width = 13,
+         height = 8.034,
+         dpi = 100)
+  
+  ###ggplot2 varImportance map
+  var_importance <- data_frame(variable= rownames(importance(rf)),
+                              importance = as.vector(importance(rf, type = 1)))
+  var_importance <- arrange(var_importance, importance)
+  var_importance$variable <- factor(var_importance$variable, levels=var_importance$variable)
+  write.csv(var_importance,
+            file = "./Data/varIm_hard.csv")
+  
+  ggplot(var_importance,
+         aes(x = importance, y = variable)) +
+    geom_point() +
+    geom_line(aes(group = 1)) +
+    labs(x = "%IncMSE",
+         y = NULL) +
+    theme_bw() +
+    theme(panel.grid = element_blank(),
+          axis.line = element_line(size = 0.8),
+          panel.border = element_rect(size = 1),
+          axis.text = element_text(size = 12),
+          axis.title = element_text(size = 16),
+          legend.title = element_text(size = 14),
+          legend.text = element_text(size = 10))
+  ggsave("./Figures/Hardness_prediction/varImportance_Structur_IncMSE.pdf",
          device = cairo_pdf,
          width = 11.69,
          height = 8.27)
-  ggsave("./Figures/Hardness_prediction/Real_Predict.jpg",
-         width = 11.69,
-         height = 8.27)
-  ggsave("./Figures/Hardness_prediction/Real_Predict.tiff",
-         width = 11.69,
-         height = 8.27)
-
+  ggsave("./Figures/Hardness_prediction/varImportance_Structur_IncMSE.tiff",
+         width = 243,
+         height = 171,
+         units = "mm",
+         dpi = 100)
 }
 
 

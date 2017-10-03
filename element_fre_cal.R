@@ -7,7 +7,7 @@ element_fre_cal <- function(Alloy_info) {
   temp <-   Alloy_info %>%
     count(Element, sort = TRUE)
   
-  pdf("./Figures/element_cloud.pdf",
+  pdf("./Figures/Element/elementCloud.pdf",
       paper = "a4r")
   Alloy_info %>%
     count(Element, sort = TRUE) %>%
@@ -16,36 +16,33 @@ element_fre_cal <- function(Alloy_info) {
                                    rot.per = 0,
                                    ordered.colors = FALSE))
   dev.off()
-  # pdf("./Figures/element_cloud_star.pdf")
-  # library(wordcloud2)
-  # wordcloud2(temp, shape = "star")
-  # dev.off()
-
-  frequency <- Alloy_info %>%
+  
+  elementFrequency <- Alloy_info %>%
     count(Element, sort = TRUE) %>%
     mutate(other = n / sum(n)) %>%
     ungroup()
-  # element_distribution <- ggplot(frequency, aes(x = Element, y = other)) +
-  #   geom_point() +
-  #   geom_hline(yintercept = 0.025) +
-  #   geom_vline(xintercept = 4.5) +
-  #   geom_vline(xintercept = 19.5) +
-  #   geom_text(aes(label = Element), check_overlap = TRUE, vjust = -1.0) +
-  #   theme(legend.position="none") +
-  #   labs(y = "Frequency", x = NULL)
-  element_distribution <- ggplot(frequency, aes(x = Element, 
-                                                y = other,
-                                                fill = Element)) +
-    geom_bar(stat="identity") +
-    labs(x = NULL,
+  elementFrequency %>%
+    rename(Symbol = Element, Fre = other) %>%
+    select(1, 3) %>%
+  write.csv(file = "./Data/elementFre.csv")
+  ggplot(elementFrequency, aes(x = Element, y = other)) +
+    geom_bar(stat = "identity",fill="#0000FF", colour="black") +
+    labs(x = NULL, 
          y = "Frequency") +
-    geom_text(aes(label = Element), check_overlap = TRUE, vjust = -1.0) +
-    theme(legend.position = "none")
-  # print(element_distribution)
-  # ggsave("element_distribution.pdf", element_distribution, path = "./Figures/",
-  #        width = 297, height = 210, units = "mm")
-  ggsave("element_distribution_no_legend.pdf", 
-         element_distribution + theme(legend.position = "none"), 
-         path = "./Figures/",
-         width = 297, height = 210, units = "mm")
+    geom_text(aes(label = Element),
+              check_overlap = TRUE,
+              vjust = -1.0) +
+    theme_bw() +
+    theme(panel.grid = element_blank(),
+          axis.title = element_text(size = 15),
+          axis.text = element_text(size = 12),
+          axis.text.x = element_blank(),
+          axis.line = element_line(size = 0.8),
+          panel.border = element_rect(size = 1))
+  ggsave("element_use_frequency.pdf",
+         path = "./Figures/Element/",
+         width = 297,
+         height = 210,
+         units = "mm")
+  ggsave("element_use_frequency.tiff")
 }

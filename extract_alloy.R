@@ -1,7 +1,7 @@
 #### 提取合金中的元素向量和权重向量####
 #### library(stringr)
 #### library(dplyr)
-periodic <- read.table("periodic-table.csv",
+periodic <- read.table("./Data/periodic-table.csv",
                        header = TRUE,
                        sep = ",") 
 
