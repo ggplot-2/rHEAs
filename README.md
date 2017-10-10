@@ -1,4 +1,4 @@
-# rHEAs
+# `rHEAs
 
 
 
@@ -27,4 +27,6 @@
 | \.Rhistory                           | Code history                             |
 | Main_Function .R  The main function. | The main function                        |
 | element-data-raw.rda                 | R data for element periodic              |
+| rHEAs.Rproj                          | R project file                           |
+| README.md                            | ReadMe                                   |
 
