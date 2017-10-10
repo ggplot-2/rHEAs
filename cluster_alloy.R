@@ -44,12 +44,19 @@ cluster_alloy <- function(HEAs, Alloy_info) {
    #########################################
    
    plot.fan <- function(hc, nclus = 6) {
-     palette <- c("#E3170D",
-                  "#00BFC4",
-                  "#00BA38",
+     # palette <- c("#00BFC4",
+     #              "#E3170D",
+     #              "#0000FF" ,
+     #              "#A020F0",
+     #              "#FF6100",
+     #              "#00BA38")[1:nclus]
+     palette <- c("#00BA38",
+                  "#E3170D",
+                  "#0000FF",
+                  "#FF00FF",
                   "#A020F0",
-                  "#FF6100",
-                  "#0000FF")[1:nclus]
+                  # "#FF6100",
+                  "#00BFC4")[1:nclus]
 
      
      clus <- cutree(hc,nclus)
@@ -67,29 +74,19 @@ cluster_alloy <- function(HEAs, Alloy_info) {
           cex = 1.1)  
    }
    plot.fan(hc, 6)
-   tiff("./Figures/Alloy_Clustering.tif",
-        width = 1246.18,
-        height = 1256.07,
+   tiff("./Figures/alloyClustering.tif",
+        width = 6000,
+        height = 6000,
         compression = "none",
-        type = "cairo")
+        type = "cairo",
+        res = 500)
    plot.fan(hc, 6)
    dev.off()
-   # mypal=c("#556270", "#1B676B", "#0e81fd", "#FF6B6B", "#C44D58", "#000000")
-   # mypal = c("#A020F0", 
-   #           "#00BFC4", 
-   #           "#00BA38", 
-   #           "#E3170D", 
-   #           "#FF6100", 
-   #           "#0000FF")
-   # op = par(bg="#E8DDCB")
-   # 
-   # plot(as.phylo(hc), 
-   #      type="fan", 
-   #      tip.color = mypal[ID],
-   #      edge.color = mypal[ID],
-   #      show.node.label = TRUE,
-   #      cex = 1)
-   # dev.off()
+   pdf("./Figures/alloyClustering.pdf",
+       width = 16.53,
+       height = 16.53)
+   plot.fan(hc, 6)
+   dev.off()
 
   
 

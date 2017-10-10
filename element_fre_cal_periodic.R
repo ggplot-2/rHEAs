@@ -440,8 +440,8 @@ ggplot() +
                          na.value = "grey70",
                          colours = c("blue", "#9933FA", "cyan", "#7CFC00", "#FFD700", "#FF6103", "red"),
                          # values = c(0, 0.5, 1),
-                         breaks = c(0, 0.05, 0.10, 0.15),
-                         labels = c(0, 5, 10, 15))  +
+                         breaks = c(0.025, 0.05, 0.075, 0.10, 0.125, 0.15),
+                         labels = c(2.5,  5, 7.5, 10, 12.5, 15))  +
   # plot title (usually property and unit)
   annotate("text", x = 8, y = 0.6,
            vjust = 0.5,

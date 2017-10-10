@@ -208,7 +208,81 @@ ggsave("./Figures/Hardness_prediction/Real_Predict.pdf",
          width = 13,
          height = 8.034,
          dpi = 100)
-  
+  ### BPNN 预测评价 ####
+ 
+  tiff("./Figures/Hardness_prediction/HardnessrealPredictNeat.tiff",
+       width = 6000,
+       height = 4000,
+       compression = "none",
+       type = "cairo",
+       res = 410,
+       antialias = "subpixel")
+  library(ggrepel)
+  ggplot(data = data.frame(Alloy_System = test_data$Alloy_Sys,
+                           actual = test_hard_unscale,
+                           pred_BP = pred_BP_unscale), 
+         na.rm = TRUE) +
+    geom_abline(slope = 1,
+                intercept = 0,
+                color = "blue",
+                size = 0.8) +
+    geom_point(aes(x = actual,
+                   y = pred_BP),
+               color = "red",
+               size = 7) +
+    labs(x = TeX("Actual vickers hardness/kg$\\cdot$mm^{-2}"),
+         y = TeX("Predicted vickers hardness/kg$\\cdot$mm^{-2}")) +
+    geom_label_repel(aes(x = round(actual),
+                         y = round(pred_BP),
+                         label = Alloy_System),
+                     fill = "blue",
+                     alpha = 0.9,
+                     color = "white",
+                     box.padding = 0.8,
+                     point.padding = 0.4,
+                     segment.color = "purple",
+                     segment.size = 1,
+                     segment.alpha = 0.7,
+                     direction = "y",
+                     force = 9,
+                     nudge_y = 1e-5) +
+    xlim(200, 800) +
+    ylim(200, 800) +
+    geom_text(aes(x = 250, 
+                  y = 770,
+                  label = "BPNN"),
+              color = "black",
+              parse = TRUE,
+              size = 6) +
+    geom_text(aes(x = 250, 
+                  y = 740,
+                  label = paste("R^2 ==", round(R2_BP, 2))),
+              color = "black",
+              parse = TRUE,
+              size = 4) +
+    geom_text(aes(x = 250, 
+                  y = 720,
+                  label = paste("RMSE == ",round(rmse_BP_unscale, 2))),
+              color = "black",
+              parse = TRUE,
+              size = 4) +
+    theme_bw() +
+    theme(panel.grid = element_blank(),
+          panel.border = element_rect(size = 1.5),
+          # panel.background = element_rect(fill = "grey70"),
+          axis.title = element_text(size = 16),
+          axis.text = element_text(size = 12,
+                                   color = "black"),
+          axis.line = element_line(size = 1),
+          
+          legend.title = element_text(size = 16),
+          legend.text = element_text(size = 12),
+          legend.text.align = 0,
+          legend.background =  element_rect(fill = "transparent",
+                                            colour = NA),
+          legend.position = c(.78,.22)) 
+  dev.off()
+
   ###ggplot2 varImportance map
   var_importance <- data_frame(variable= rownames(importance(rf)),
                               importance = as.vector(importance(rf, type = 1)))

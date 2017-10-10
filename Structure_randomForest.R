@@ -94,6 +94,9 @@ Structure_randomForest <- function(BigMatrix) {
                   observed = test_data$Structure, 
                   predicted = pred)
   a <- arrange(a, observed)
+  a <- a %>%
+    mutate(trueValue = if_else(observed == predicted, 1,  0))
+  
   evalStr <- function(a) {
     strLevel <- c("Amorphous", "B2 + σ", "BCC + σ", "BCC1 + B2", "Compounds", "FCC",
                   "FCC + BCC", "FCC + BCC +σ", "HCP")
@@ -152,76 +155,111 @@ Structure_randomForest <- function(BigMatrix) {
     ggsave("./Figures/Structure_randomForest/evalStr_RF1676.pdf",
            width = 11.69,
            height = 8.27)
-  }
-  evalStr(a)
-  strLevel <- c("Amorphous","Compounds", "BCC", "BCC1 + B2", "FCC",
-                "B2 + σ", "BCC + σ",  "FCC + BCC +σ",  
-                "FCC + BCC",  "HCP")
+    ############################################
+    strLevel <- c("Amorphous","Compounds", "BCC", "BCC1 + B2", "FCC",
+                  "B2 + σ", "BCC + σ",  "FCC + BCC +σ",  
+                  "FCC + BCC",  "HCP")
     p <-  ggplot(a,aes(x = observed, y = predicted)) + 
-    scale_y_discrete(limits = strLevel) +
-    scale_x_discrete(limits = strLevel) + 
-    geom_jitter(aes(x = observed, y = predicted, color = Alloy_System),
-                alpha = 0.6,
-                width = 0.05,
-                height = 0.05,
-                size = 10) +
-    geom_abline(aes(group =1), 
-                slope = 1, intercept = 0,
-                color = "blue", size = 0.7)
+      scale_y_discrete(limits = strLevel) +
+      scale_x_discrete(limits = strLevel) + 
+      geom_jitter(aes(x = observed, y = predicted, color = Alloy_System),
+                  alpha = 0.6,
+                  width = 0.05,
+                  height = 0.05,
+                  size = 10) 
     p
-  jitter_data <- layer_data(p, 1)
-  library(ggrepel)
-  # p <-
-   p + geom_label_repel(aes(x = jitter_data$x,
-                                y = jitter_data$y,
-                                label = Alloy_System,
-                                color = Alloy_System)
-                        box.padding = 0.8,
-                        point.padding = 0.2) +
-    labs(x = "Actual structure",
-         y = "Predicted structure") +
-    geom_abline(aes(group =1), 
+    
+    jitter_data <- layer_data(p, 1)
+    library(ggrepel)
+    p + geom_label_repel(aes(x = jitter_data$x,
+                             y = jitter_data$y,
+                             label = Alloy_System,
+                             color = Alloy_System),
+                         box.padding = 1,
+                         point.padding = 0.2) +
+      labs(x = "Actual structure",
+           y = "Predicted structure") +
+      geom_abline(aes(group =1),
                   slope = 1, intercept = 0,
                   color = "blue", size = 0.7)  +
-    theme_bw() +
-    theme(legend.position = "none",
-          # panel.background = element_blank(),
-          legend.background =  element_rect(fill = "transparent",colour = NA),
-          # panel.grid = element_blank(),
-          axis.text = element_text(size = 12),
-          axis.title = element_text(size = 16),
-          axis.line = element_line(size = 1)) 
-  
-    # theme_bw() +
-    # labs(x = "Actual structure",
-    #      y = "Predicted structure") +
-    # scale_color_discrete(name = "Alloy system") +
-    # guides(color = guide_legend(ncol = 4)) +
-    # theme(panel.grid = element_blank(),
-    #       plot.background = element_rect(fill = "transparent",colour = NA),
-    #       axis.line = element_line(size = 0.8),
-    #       panel.border = element_rect(size = 1),
-    #       axis.text = element_text(size = 12),
-    #       axis.title = element_text(size = 16),
-    #       legend.title = element_text(size = 12),
-    #       legend.text = element_text(size = 8),
-    #       legend.text.align = 0,
-    #       legend.position = c(.7, .2))
-  
-  ggsave("./Figures/Structure_randomForest/real_pred_vis.pdf",
-         device = cairo_pdf,
-         width = 13,
-         height = 8.034)
-  ggsave("./Figures/Structure_randomForest/real_pred_vis.tiff",
-         # device = cairo_pdf,
-         width = 13,
-         height = 8.034,
-         dpi = 100)
-
-  # ggsave("./Figures/Structure_randomForest/real_pred_vis.tiff",
-  #        width = 11.69,
-  #        height = 8.27,
-  #        dpi = 200)
+      theme_bw() +
+      theme(legend.position = "none",
+            # panel.background = element_blank(),
+            legend.background =  element_rect(fill = "transparent",colour = NA),
+            # panel.grid = element_blank(),
+            axis.text = element_text(size = 12),
+            axis.title = element_text(size = 16),
+            axis.line = element_line(size = 1)) 
+    ggsave("./Figures/Structure_randomForest/real_pred_vis.pdf",
+           device = cairo_pdf,
+           width = 13,
+           height = 8.034)
+    ggsave("./Figures/Structure_randomForest/real_pred_vis.tiff",
+           # device = cairo_pdf,
+           width = 13,
+           height = 8.034,
+           dpi = 100)
+  }
+  evalStr(a)
+  evalStrNeat <- function(a) {
+    strLevel <- c("Amorphous","Compounds", "BCC", "BCC1 + B2", "FCC",
+                  "B2 + σ", "BCC + σ",  "FCC + BCC +σ",  
+                  "FCC + BCC",  "HCP")
+    p <-  ggplot(a,
+                 aes(x = observed, 
+                     y = predicted)
+                 ) + 
+      scale_y_discrete(limits = strLevel) +
+      scale_x_discrete(limits = strLevel) + 
+      geom_jitter(aes(x = observed, 
+                      y = predicted,
+                      color = factor(trueValue)
+                      ),
+                  width = 0.05,
+                  height = 0.05,
+                  size = 10) +
+      scale_color_manual(values = c("red", "blue")) +
+      geom_abline(aes(group =1),
+                  slope = 1, 
+                  intercept = 0,
+                  color = "blue", 
+                  size = 2,
+                  alpha = 0.8)  
+    p
+    
+    jitter_data <- layer_data(p, 1)
+    library(ggrepel)
+    p + geom_label_repel(aes(x = jitter_data$x,
+                             y = jitter_data$y,
+                             label = Alloy_System,
+                             fill = factor(trueValue)
+                             ),
+                         color = "white",
+                         label.padding = 0.25,
+                         box.padding = 0.6,
+                         point.padding = 0.3,
+                         segment.color = "purple"
+                         ) +
+      scale_fill_manual(values = c("red", "blue")) +
+      labs(x = "Actual structure",
+           y = "Predicted structure") +
+      theme_bw(base_size = 16) +
+      theme(panel.border = element_rect(size = 1.5),
+        legend.position = "none",
+            legend.background =  element_blank(),
+            axis.title = element_text(size = 16),
+            axis.text = element_text(size = 12,
+                                     color = "black"),
+            axis.line = element_line(size = 1)) 
+    ggsave("./Figures/Structure_randomForest/real_pred_visNeat.pdf",
+           device = cairo_pdf,
+           width = 13,
+           height = 8.034)
+    ggsave("./Figures/Structure_randomForest/real_pred_visNeat.tiff",
+           width = 13,
+           height = 8.034)
+  }
+  evalStrNeat(a)
    
   library(xlsx)
   write.xlsx(a,
@@ -294,7 +332,7 @@ Structure_randomForest <- function(BigMatrix) {
                alpha = 0.7) +
     geom_line(size = 1) +
     scale_color_manual("",
-                       values = c("#00BFC4", "#F8766D")) +
+                       values = c("blue", "red")) +
     scale_linetype_manual("",
                           values = c(1, 1)) +
     scale_shape_manual("",
@@ -317,13 +355,13 @@ Structure_randomForest <- function(BigMatrix) {
     geom_text(aes(x = 15.5,
                   y = 7),
               label = "Structure",
-              color = "#F8766D",
+              color = "red",
               size = 6,
               check_overlap = TRUE) +
     geom_text(aes(x = "Mn",
                   y = 12),
               label = "Hardness",
-              color = "#00BFC4",
+              color = "blue",
               size = 6,
               check_overlap = TRUE)
   p
@@ -334,7 +372,7 @@ Structure_randomForest <- function(BigMatrix) {
   grid.ls(grid.force(g))
   names.grobs <- grid.ls(grid.force(g))$name 
   labels <- names.grobs[which(grepl("^label", names.grobs))]
-  fill <- c("#00BFC4", "#F8766D")
+  fill <- c("blue", "red")
   for(i in seq_along(labels)) {
     g <- editGrob(grid.force(g), gPath(labels[i]), grep = TRUE,  
                   gp = gpar(col = fill[i]))
@@ -348,7 +386,7 @@ Structure_randomForest <- function(BigMatrix) {
   dev.off()
   
   plotVarIm2y <- function(rf){
-    ####################################################################################
+    
     varImHard <- read.csv("./Data/varIm_hard.csv")
     varImHard$variable <- factor(varImHard$variable, periodic$atomic_symbol)
     varImHard <- varImHard %>%
@@ -362,6 +400,13 @@ Structure_randomForest <- function(BigMatrix) {
       rbind(varImHard)
     var_importance$variable <- factor(var_importance$variable, 
                                       levels = periodic$atomic_symbol)
+    
+    
+    tiff("./Figures/varImportance_2y.tiff",
+         compression = "none",
+         width = 3000,
+         height = 2100,
+         res = 300)
     ggplot(var_importance,
            aes(x = variable, 
                y = importance,
@@ -370,31 +415,32 @@ Structure_randomForest <- function(BigMatrix) {
                linetype = feature,
                group = feature)) +
       
-      geom_point(size = 5,
-                 alpha = 0.7) +
+      geom_point(size = 5, alpha = 0.9) +
       geom_line(size = 1) +
       scale_color_manual("",
-                         values = c("#00BFC4", "#F8766D")) +
+                         values = c("blue", "red")) +
       scale_linetype_manual("",
                             values = c(1, 1)) +
       scale_shape_manual("",
                          values = c(15, 20)) +
-      scale_y_continuous(sec.axis = sec_axis(~. *1, name = "MeanDecreaseGini")) +
+      scale_y_continuous(sec.axis = sec_axis(~. *1, name = "Mean Decrease Gini")) +
       labs(x= NULL,
            y = "%IncMSE") +
       theme_bw() +
       theme(panel.grid = element_blank(),
-            axis.line = element_line(size = 0.8),
-            panel.border = element_rect(size = 1),
+            panel.border = element_rect(size = 1.5),
+            
             axis.title = element_text(size = 16),
-            axis.text = element_text(size = 12),
-            axis.text.y = element_text(color = "#00BFC4"),
-            axis.line.y = element_line(color = "#00BFC4"),
-            axis.title.y = element_text(color = "#00BFC4"),
+            axis.text = element_text(size = 12,
+                                     color = "black"),
+            axis.line = element_line(size = 0.8),
+            axis.text.y = element_text(color = "blue"),
+            axis.line.y = element_line(color = "blue"),
+            axis.title.y = element_text(color = "blue"),
             axis.text.y.right = element_text(size = 12,
-              color = "#F8766D"),
+              color = "red"),
             axis.title.y.right = element_text(size = 16,
-              color = "#F8766D"),
+              color = "red"),
             legend.title = element_text(size = 16),
             legend.text = element_text(size = 18),
             legend.text.align = 0,
@@ -402,24 +448,44 @@ Structure_randomForest <- function(BigMatrix) {
                                               colour = NA, 
                                               size = 0.8),
             legend.position = "none") +
-      geom_text(aes(x = "Ta",
+      geom_text(aes(x = "O",
                     y = 18),
-                label = "Structure",
-                color = "#F8766D",
-                size = 6,
+                label = 'Element importance\n for hardness',
+                color = "blue",
+                size = 5,
                 check_overlap = TRUE) +
-      geom_text(aes(x = "B",
+      geom_text(aes(x = "Lu",
                     y = 18),
-                label = "Hardness",
-                color = "#00BFC4",
-                size = 6,
-                check_overlap = TRUE)
-    ggsave("./Figures/varImportance_2y.pdf",
-           device = cairo_pdf,
-           width = 243,
-           height = 171,
-           units = "mm",
-           dpi = 600)
+                label = 'Element importance\n for phase structure',
+                color = "red",
+                size = 5,
+                check_overlap = TRUE) +
+      geom_text(aes(x = "Al",
+                    y = 15.23),
+                label = "Al",
+                color = "black",
+                vjust = -1) +
+      geom_text(aes(x = "Ti",
+                    y = 19),
+                label = "Ti",
+                color = "black",
+                vjust = -1) +
+      geom_text(aes(x = "Cu",
+                    y = 18.21),
+                label = "Cu",
+                color = "black",
+                vjust = -1) +
+      geom_text(aes(x = "Mo",
+                    y = 15.98),
+                label = "Mo",
+                color = "black",
+                vjust = -1) +
+      geom_text(aes(x = "Ta",
+                    y = 7.23),
+                label = "Ta",
+                color = "black",
+                vjust = -1)
+    dev.off()
     
   }
   plotVarIm2y(rf)
